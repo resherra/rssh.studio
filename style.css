@@ -1,0 +1,45 @@
+* {
+    background: black;
+    margin: 0;
+    padding: 20;
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    color: tomato;
+}
+
+h1,
+p {
+    font-family: radnika;
+}
+
+@font-face {
+    font-family: radnika;
+    src: url(radnika.otf);
+}
+
+
+input{
+    border: solid 2px blue;
+    padding: 10px;
+    border-radius: 100px;
+    margin: 30px;
+}
+
+input{
+    color: gainsboro;
+    opacity: 30%;
+}
+
+input[type=submit] {
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
