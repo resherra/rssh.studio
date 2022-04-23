@@ -50,13 +50,6 @@
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </div>
-                <!-- <ul class="nav-menu">
-                    <li><a href="https://twitter.com/redouancherrat" target="_blank" rel="noreferrer noopener"><img
-                                src="twitter.svg" alt=""></a></li>
-
-                    <li><a href="https://github.com/lazych" target="_blank" rel="noreferrer noopener"><img
-                                src="github.svg" alt=""></a></li>
-                </ul> -->
             </nav>
         </header>
 
@@ -127,20 +120,25 @@
     }
 
     body {
-        margin: 100px 125px;
-        /* margin: 10vh 10vw; */
+        /* margin: 100px 125px; */
+        margin: 12vh 10vw;
 
 
     }
+
+    /* img {
+        width: 100%;
+    } */
 
     .container {
         height: 100%;
         display: grid;
-        grid-template-rows: auto 1fr auto;
+        grid-template-rows: 1fr 1fr auto;
     }
 
     .nav-branding {
         width: 120px;
+        height: 100%;
     }
 
 
@@ -216,8 +214,16 @@
 
     @media(max-width: 960px) {
 
+
+
         body {
             margin: 100px 80px;
+        }
+
+        .container {
+            height: 100%;
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
         }
 
         .humb,
