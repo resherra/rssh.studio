@@ -25,11 +25,9 @@
 
 <body>
     <div class="container">
-
-
         <header>
             <nav class="navbar">
-                <a href="#" class="nav-branding"><img src="logo.svg" alt=""></a>
+                <a href="index.html" class="nav-branding"><img src="logo.svg" alt=""></a>
                 <ul class="nav-menu">
                     <li class="nav-item">
                         <a href="About.html" class="nav-link">About</a>
@@ -40,10 +38,10 @@
                     <li class="nav-item">
                         <a href="Contact.html" class="nav-link">Contact</a>
                     </li>
-                    <li class="hope"><a href="https://twitter.com/redouancherrat" target="_blank"
+                    <li class="humb-links"><a href="https://twitter.com/redouancherrat" target="_blank"
                             rel="noreferrer noopener"><img src="twitter.svg" alt=""></a></li>
-                    <li class="hope"><a href="https://github.com/lazych" target="_blank" rel="noreferrer noopener"><img
-                                src="github.svg" alt=""></a></li>
+                    <li class="humb-links"><a href="https://github.com/lazych" target="_blank"
+                            rel="noreferrer noopener"><img src="github.svg" alt=""></a></li>
                 </ul>
                 <div class="humb">
                     <span class="bar"></span>
@@ -55,29 +53,25 @@
 
         <section>
             <h2>Hello! i'm Redouan, @lazych on the web. Junior Front-end developer and UX/UI designer.</h2>
-            <h3>I help clients to <span class="coock">Ideate</span> <span class="coock">Prototype</span> <span
-                    class="coock">Build</span> seamless & User-friendly
+            <h3>I help clients to <span class="services">Ideate</span> <span class="services">Prototype</span> <span
+                    class="services">Build</span> seamless & User-friendly
                 experiences.</h3>
         </section>
 
         <footer>
             <ul class="links">
                 <li><a href="https://twitter.com/redouancherrat" target="_blank" rel="noreferrer noopener"><img
-                            src="twitter.svg" alt=""></a></li>
+                            src="twitter.svg" alt="twitter"></a></li>
 
                 <li><a href="https://github.com/lazych" target="_blank" rel="noreferrer noopener"><img src="github.svg"
-                            alt=""></a></li>
+                            alt="github"></a></li>
 
 
             </ul>
         </footer>
-
-        <script src="script.js"></script>
     </div>
 
     <script src="script.js"></script>
-
-
 
 </body>
 <style>
@@ -85,30 +79,6 @@
         --random: #ffffff;
         --default: #ffffff;
     }
-
-    .coock {
-        background:
-            linear-gradient(var(--random), var(--default)) padding-box,
-            linear-gradient(83.2deg, rgb(164, 53, 255) 10.8%, rgba(99, 88, 238, 1) 94.3%) border-box;
-        border-radius: 50em;
-        border: 2px solid transparent;
-        padding: 0 10px 0 10px;
-
-    }
-
-    .coock:hover {
-        background:
-            /* linear-gradient(var(--random), var(--default)) padding-box, */
-            linear-gradient(83.2deg, rgba(164, 53, 255, 1) 10.8%, rgba(99, 88, 238, 1) 94.3%) border-box;
-        border-radius: 50em;
-        border: 2px solid transparent;
-        padding: 0 10px 0 10px;
-        color: white;
-        font-weight: 500;
-        cursor: pointer;
-
-    }
-
 
     * {
         margin: 0;
@@ -119,23 +89,15 @@
         line-height: 1.5;
     }
 
-    body {
-        margin: 100px 125px;
-
-
-    }
-
     .container {
         height: 100%;
         display: grid;
-        grid-template-rows: 1fr 1fr auto;
+        grid-template-rows: auto 1fr auto;
     }
 
-    .nav-branding {
-        width: 120px;
-        height: 100%;
+    body {
+        margin: 100px 125px;
     }
-
 
     .navbar {
         display: flex;
@@ -145,10 +107,9 @@
         font-family: "montserrat";
     }
 
-    .nav-menu a {
-        color: black;
-        font-size: 20px;
-        font-weight: 400;
+    .nav-branding {
+        width: 120px;
+        height: 100%;
     }
 
     .nav-menu {
@@ -158,13 +119,10 @@
         gap: 100px;
     }
 
-    .humb {
-        display: none;
-        cursor: pointer;
-    }
-
-    .hope {
-        display: none;
+    .nav-menu a {
+        color: black;
+        font-size: 20px;
+        font-weight: 400;
     }
 
     .bar {
@@ -178,14 +136,14 @@
         border-radius: 50px;
     }
 
-
-
-    footer {
-        grid-row: 2/3;
-        justify-self: end;
-        align-self: center;
+    .humb {
+        display: none;
+        cursor: pointer;
     }
 
+    .humb-links {
+        display: none;
+    }
 
     section h2 {
         font-family: "montserrat";
@@ -201,7 +159,41 @@
     }
 
 
-    ul img {
+    .services {
+        background:
+            linear-gradient(var(--random), var(--default)) padding-box,
+            linear-gradient(83.2deg, rgb(164, 53, 255) 10.8%, rgba(99, 88, 238, 1) 94.3%) border-box;
+        border-radius: 50em;
+        border: 2px solid transparent;
+        padding: 0 10px 0 10px;
+
+    }
+
+    .services:hover {
+        background:
+            /* linear-gradient(var(--random), var(--default)) padding-box, */
+            linear-gradient(83.2deg, rgba(164, 53, 255, 1) 10.8%, rgba(99, 88, 238, 1) 94.3%) border-box;
+        border-radius: 50em;
+        border: 2px solid transparent;
+        padding: 0 10px 0 10px;
+        color: white;
+        font-weight: 500;
+
+    }
+
+    footer {
+        grid-row: 2/3;
+        justify-self: end;
+        align-self: center;
+    }
+
+    footer ul img {
+        width: 27px;
+        margin: 10px 0;
+
+    }
+
+    header ul img {
         width: 27px;
     }
 
@@ -209,6 +201,13 @@
 
     @media(max-width: 960px) {
 
+        section {
+            grid-row: 2/3;
+        }
+
+        section {
+            align-self: center;
+        }
 
 
         body {
@@ -216,7 +215,7 @@
         }
 
         .humb,
-        .hope {
+        .humb-links {
             display: block;
 
         }
@@ -244,7 +243,6 @@
             top: 0;
             right: -100%;
             bottom: 0;
-            flex-direction: column;
             background-color: rgba(121, 121, 121, 0.08);
             /* background: linear-gradient(83.2deg, rgba(150, 93, 233, 0.5) 10.8%, rgba(99, 88, 238, 0.5) 94.3%); */
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -255,9 +253,9 @@
         }
 
         .nav-item,
-        .hope {
-            padding: 20px;
-            margin: 10px;
+        .humb-links {
+            padding: 5px 0;
+            margin: 20px;
 
         }
 
@@ -270,6 +268,21 @@
     }
 
     @media(max-width: 480px) {
+
+        body img {
+            width: 100%;
+            height: auto;
+        }
+
+        .nav-menu a {
+            color: black;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        header ul img {
+            width: 20px;
+        }
 
         section h2 {
             font-size: 19px;
