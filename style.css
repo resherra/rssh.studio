@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -68,7 +68,7 @@
 }
 
 
-/* shit */
+shit
 
 
 .wrap {
@@ -76,7 +76,6 @@
     background: linear-gradient(to right, red, orange);
     border-radius: 50px;
     padding: 3px 1;
-    /* margin: 8px; */
     margin-left: 6px;
     cursor: pointer;
     color: white;
@@ -108,7 +107,7 @@
 
   }
 
-  footer img{
+  .foot img{
       width: 20px;
       margin-left: 10px;
   }
@@ -121,4 +120,15 @@
   .foot{
       align-self: end;
       justify-self: end;
+  } */
+
+
+  /* nav {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
   }
+
+  .logo[
+
+  ] */
