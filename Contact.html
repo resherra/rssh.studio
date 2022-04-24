@@ -1,14 +1,295 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RENX1T3780"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-RENX1T3780');
+    </script>
+    <title>lazych | Contact</title>
 </head>
 
 <body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <a href="index.html" class="nav-branding"><img src="logo.svg" alt=""></a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="About.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Blog.html" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="humb-links"><a href="https://twitter.com/redouancherrat" target="_blank"
+                            rel="noreferrer noopener"><img src="twitter.svg" alt=""></a></li>
+                    <li class="humb-links"><a href="https://github.com/lazych" target="_blank"
+                            rel="noreferrer noopener"><img src="github.svg" alt=""></a></li>
+                </ul>
+                <div class="humb">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+
+        <section>
+            <h2 class="Contact-email">
+                Say Hi via <a href="mailto:Ciao@lazych.com" target="_top">Ciao@lazych.com</a>
+            </h2>
+            <footer>
+                <ul class="links">
+                    <li><a href="https://twitter.com/redouancherrat" target="_blank" rel="noreferrer noopener"><img
+                                src="twitter.svg" alt="twitter"></a></li>
+
+                    <li><a href="https://github.com/lazych" target="_blank" rel="noreferrer noopener"><img
+                                src="github.svg" alt="github"></a></li>
+
+
+                </ul>
+            </footer>
+        </section>
+
+        <!-- <footer>
+            <ul class="links">
+                <li><a href="https://twitter.com/redouancherrat" target="_blank" rel="noreferrer noopener"><img
+                    src="twitter.svg" alt="twitter"></a></li>
+                    
+                <li><a href="https://github.com/lazych" target="_blank" rel="noreferrer noopener"><img src="github.svg"
+                            alt="github"></a></li>
+                            
+                            
+                        </ul>
+                    </footer> -->
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
+<style>
+    :root {
+        --random: #ffffff;
+        --default: #ffffff;
+    }
 
-</html>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style-type: none;
+        line-height: 1.5;
+    }
+
+    .container {
+        height: 100%;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+    }
+
+    body {
+        margin: 100px 125px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        justify-items: center;
+        align-items: baseline;
+        font-family: "montserrat";
+    }
+
+    .nav-branding {
+        width: 120px;
+    }
+
+    .nav-branding img {
+        height: auto;
+        width: 100%;
+    }
+
+    .nav-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .nav-menu a {
+        color: black;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    header ul img {
+        width: 27px;
+        height: auto;
+    }
+
+    .bar {
+        display: block;
+        width: 25px;
+        margin: 5px auto;
+        padding-top: 5px;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        background-color: black;
+        border-radius: 50px;
+    }
+
+    .humb {
+        display: none;
+        cursor: pointer;
+    }
+
+    .humb-links {
+        display: none;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr auto;
+    }
+
+    section footer,
+    h2 {
+        align-self: center;
+        justify-self: center;
+    }
+
+
+    section h2 {
+        font-family: "montserrat";
+        font-weight: 500;
+        font-size: 24px;
+    }
+
+    section a {
+        color: tomato;
+        font-weight: 600;
+    }
+
+
+    footer ul img {
+        width: 27px;
+        margin: 10px 0;
+        height: auto;
+
+    }
+
+
+
+    /* responsive */
+
+    @media(max-width: 960px) {
+
+
+        section {
+            /* grid-row: 2/3; */
+        }
+
+        section {
+            align-self: center;
+            justify-self: center;
+        }
+
+        body {
+            margin: 100px 80px;
+        }
+
+        .humb,
+        .humb-links {
+            display: block;
+
+        }
+
+        .humb.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .humb.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(0deg);
+        }
+
+        .humb.active .bar:nth-child(3) {
+            transform: translateY(-12px) rotate(0deg);
+            /* opacity: 0; */
+        }
+
+        .links {
+            display: none;
+        }
+
+        .nav-menu {
+            display: block;
+            position: fixed;
+            top: 0;
+            right: -100%;
+            bottom: 0;
+            background-color: rgba(121, 121, 121, 0.08);
+            /* background: linear-gradient(83.2deg, rgba(150, 93, 233, 0.5) 10.8%, rgba(99, 88, 238, 0.5) 94.3%); */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            width: 40%;
+            transition: 0.3s;
+            backdrop-filter: blur(2px);
+
+        }
+
+        .nav-item,
+        .humb-links {
+            padding: 5px 0;
+            margin: 20px;
+
+        }
+
+        .nav-menu.active {
+            right: 0;
+            top: 0;
+
+        }
+
+    }
+
+    @media(max-width: 480px) {
+
+        .nav-menu a {
+            color: black;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        header ul img {
+            width: 20px;
+        }
+
+        section h2 {
+            font-size: 19px;
+        }
+
+        body {
+            margin: 20px 20px;
+        }
+
+        .nav-branding {
+            width: 100px;
+            height: 100%;
+        }
+    }

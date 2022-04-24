@@ -27,7 +27,7 @@
     <div class="container">
         <header>
             <nav class="navbar">
-                <a href="index.html" class="nav-branding"><img src="logo.svg" alt="" width="100%" height="auto"></a>
+                <a href="index.html" class="nav-branding"><img src="logo.svg" alt=""></a>
                 <ul class="nav-menu">
                     <li class="nav-item">
                         <a href="About.html" class="nav-link">About</a>
@@ -39,11 +39,9 @@
                         <a href="Contact.html" class="nav-link">Contact</a>
                     </li>
                     <li class="humb-links"><a href="https://twitter.com/redouancherrat" target="_blank"
-                            rel="noreferrer noopener"><img src="twitter.svg" alt="twitter" width="100%"
-                                height="auto"></a></li>
+                            rel="noreferrer noopener"><img src="twitter.svg" alt=""></a></li>
                     <li class="humb-links"><a href="https://github.com/lazych" target="_blank"
-                            rel="noreferrer noopener"><img src="github.svg" alt="github" width="100%" height="auto"></a>
-                    </li>
+                            rel="noreferrer noopener"><img src="github.svg" alt=""></a></li>
                 </ul>
                 <div class="humb">
                     <span class="bar"></span>
@@ -63,10 +61,10 @@
         <footer>
             <ul class="links">
                 <li><a href="https://twitter.com/redouancherrat" target="_blank" rel="noreferrer noopener"><img
-                            src="twitter.svg" alt="twitter" width="100%" height="auto"></a></li>
+                            src="twitter.svg" alt="twitter"></a></li>
 
                 <li><a href="https://github.com/lazych" target="_blank" rel="noreferrer noopener"><img src="github.svg"
-                            alt="github" width="100%" height="auto"></a></li>
+                            alt="github"></a></li>
 
 
             </ul>
@@ -101,8 +99,6 @@
         margin: 100px 125px;
     }
 
-
-
     .navbar {
         display: flex;
         justify-content: space-between;
@@ -113,7 +109,11 @@
 
     .nav-branding {
         width: 120px;
-        height: 100%;
+    }
+
+    .nav-branding img {
+        height: auto;
+        /* width: 100%; */
     }
 
     .nav-menu {
@@ -194,11 +194,13 @@
     footer ul img {
         width: 27px;
         margin: 10px 0;
+        height: auto;
 
     }
 
     header ul img {
         width: 27px;
+        height: auto;
     }
 
     /* responsive */
@@ -272,8 +274,6 @@
     }
 
     @media(max-width: 480px) {
-
-
 
         .nav-menu a {
             color: black;
