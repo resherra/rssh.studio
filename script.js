@@ -14,7 +14,19 @@ document.querySelectorAll(`.nav-link`).forEach(n => n.addEventListener(`click`, 
 } ))
 
 
-
-
 console.log(`${document.title}`)
 console.log(bd)
+
+
+
+
+var form = document.querySelector('.pageclip-form')
+Pageclip.form(form, {
+  onSubmit: function (event) { },
+  onResponse: function () { 
+
+    const red = window.location.href = "http://stackoverflow.com";
+
+  },
+  successTemplate: '<span>Thank you!</span>'
+})
