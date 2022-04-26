@@ -5,11 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
     <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -192,15 +189,15 @@
     }
 
     .pageclip-form input {
-
         background:
             linear-gradient(var(--random), var(--default)) padding-box,
             linear-gradient(83.2deg, rgb(164, 53, 255) 10.8%, rgba(99, 88, 238, 1) 94.3%) border-box;
         border-radius: 50em;
         border: 2px solid transparent;
-        padding: 10px 20px 10px 5px;
+        padding: 10px 20px 10px 20px;
         font-family: "montserrat";
         margin-bottom: 10px;
+        outline: none;
     }
 
     .pageclip-form {
@@ -273,8 +270,8 @@
             top: 0;
             right: -100%;
             bottom: 0;
-            /* background-color: rgba(231, 74, 74, 0.3); */
-            background: linear-gradient(83.2deg, rgba(150, 93, 233, 0.2) 10.8%, rgba(99, 88, 238, 0.2) 94.3%);
+            background-color: rgba(255, 255, 255, 0.15);
+
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             width: 40%;
             transition: 0.3s;
@@ -301,7 +298,6 @@
     @media(max-width: 480px) {
 
         .nav-menu a {
-            color: black;
             font-size: 16px;
             font-weight: 400;
         }
