@@ -116,6 +116,11 @@ footer ul img {
 
 @media(max-width: 960px) {
 
+
+    .nav-branding {
+        width: 100px;
+    }
+
     .navbar {
         align-items: center;
     }
@@ -186,8 +191,15 @@ footer ul img {
 
 @media(max-width: 480px) {
 
+    .nav-menu { 
+        width: 45%;
+    }
 
-
+    .nav-item,
+    .humb-links {
+        padding: 5px 0;
+        margin: 10px;
+    }
 
     .nav-menu a {
         color: black;
@@ -208,7 +220,7 @@ footer ul img {
     }
 
     .nav-branding {
-        width: 100px;
+        width: 80px;
         height: 100%;
     }
 }
