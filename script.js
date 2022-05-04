@@ -17,15 +17,11 @@ document.querySelectorAll(`.nav-link`).forEach(n => n.addEventListener(`click`, 
 console.log(`${document.title}`)
 
 
-
-
 var form = document.querySelector('.pageclip-form')
 Pageclip.form(form, {
   onSubmit: function (event) { },
   onResponse: function () { 
-
-    const red = window.location.href = "Contact.html";
-
+    window.location.href = "Blog.html";
   },
 })
 
