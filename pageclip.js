@@ -3,6 +3,7 @@
     var e = "string" == typeof __pageclip_base ? __pageclip_base : "https://send.pageclip.co",
         m = {
             _base: e,
+            _successTemplate: '',
             cssBase: "pageclip-form",
             form: function(n, r) {
                 if (r = r || {}, null == n) throw new Error("form() must be passed an HTMLFormElement or String, not null");

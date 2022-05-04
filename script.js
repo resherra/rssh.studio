@@ -24,7 +24,7 @@ Pageclip.form(form, {
   onSubmit: function (event) { },
   onResponse: function () { 
 
-    const red = window.location.href = "Blog.html";
+    const red = window.location.href = "Contact.html";
 
   },
 })
