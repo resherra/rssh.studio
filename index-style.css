@@ -16,7 +16,7 @@
 
 
 
-body.light-theme {
+body {
     margin: 100px 125px;
     color: var(--black);
     background-color: var(--random);
@@ -150,7 +150,7 @@ header ul svg {
 
     .nav-branding {
         width: 100px;
-    }
+    }q
 
     section {
         grid-row: 2/3;
@@ -161,7 +161,7 @@ header ul svg {
     }
 
 
-    body {
+    body{
         margin: 100px 80px;
     }
 
