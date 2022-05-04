@@ -15,7 +15,6 @@ document.querySelectorAll(`.nav-link`).forEach(n => n.addEventListener(`click`, 
 
 
 console.log(`${document.title}`)
-console.log(bd)
 
 
 
@@ -30,3 +29,4 @@ Pageclip.form(form, {
   },
   successTemplate: '<span>Thank you!</span>'
 })
+

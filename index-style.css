@@ -1,8 +1,3 @@
-:root {
-    --random: #ffffff;
-    --default: #ffffff;
-}
-
 
 * {
     margin: 0;
@@ -19,8 +14,23 @@
     grid-template-rows: auto 1fr auto;
 }
 
-body {
+
+
+body.light-theme {
     margin: 100px 125px;
+    color: var(--black);
+    background-color: var(--random);
+    --random: #ffffff;
+    --default: #ffffff;
+    --black: #121212;
+}
+
+body.dark-theme{
+    --random: #121212;
+    --default: #121212;
+    --black: #ffffff;
+    
+
 }
 
 .navbar {
@@ -35,9 +45,15 @@ body {
     width: 120px;
 }
 
-.nav-branding img {
+.nav-branding svg {
     height: auto;
 }
+
+svg {
+    fill: var(--black);
+    user-select: none;
+}
+
 
 .nav-menu {
     display: flex;
@@ -47,7 +63,7 @@ body {
 }
 
 .nav-menu a {
-    color: black;
+    color: var(--black);
     font-size: 20px;
     font-weight: 400;
 }
@@ -59,7 +75,7 @@ body {
     padding-top: 4px;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-    background-color: black;
+    background-color: var(--black);
     border-radius: 50px;
 }
 
@@ -94,6 +110,7 @@ section h3 {
     border-radius: 50em;
     border: 2px solid transparent;
     padding: 0 10px 0 10px;
+    user-select: none;
 
 }
 
@@ -104,7 +121,7 @@ section h3 {
     border-radius: 50em;
     border: 2px solid transparent;
     padding: 0 10px 0 10px;
-    color: white;
+    color: var(--random);
     font-weight: 500;
 
 }
@@ -115,14 +132,14 @@ footer {
     align-self: center;
 }
 
-footer ul img {
+footer ul svg {
     width: 27px;
     margin: 10px 0;
     height: auto;
 
 }
 
-header ul img {
+header ul svg {
     width: 27px;
     height: auto;
 }
