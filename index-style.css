@@ -1,3 +1,7 @@
+:root {
+    --random: #ffffff;
+    --default: #ffffff;
+}
 
 * {
     margin: 0;
@@ -226,6 +230,8 @@ header ul svg {
 
 @media(max-width: 480px) {
 
+    
+
     .nav-menu { 
         width: 45%;
     }
@@ -237,12 +243,11 @@ header ul svg {
     }
 
     .nav-menu a {
-        color: black;
         font-size: 16px;
         font-weight: 400;
     }
 
-    header ul img {
+    header ul svg {
         width: 20px;
     }
 
