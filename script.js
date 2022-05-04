@@ -24,9 +24,8 @@ Pageclip.form(form, {
   onSubmit: function (event) { },
   onResponse: function () { 
 
-    const red = window.location.href = "http://stackoverflow.com";
+    const red = window.location.href = "Blog.html";
 
   },
-  successTemplate: '<span>Thank you!</span>'
 })
 

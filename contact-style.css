@@ -112,8 +112,7 @@ section h2 {
 }
 
 section a {
-    background: 
-    linear-gradient(83.2deg, rgb(164, 53, 255) 10.8%, rgba(99, 88, 238, 1) 94.3%) ;
+    background: linear-gradient(83.2deg, rgb(164, 53, 255) 10.8%, rgba(99, 88, 238, 1) 94.3%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 600;
