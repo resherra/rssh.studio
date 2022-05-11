@@ -25,3 +25,21 @@ Pageclip.form(form, {
   },
 })
 
+function myFunctionDark() {
+  var x = document.getElementById("night");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+
+function myFunctionLight() {
+  var x = document.getElementById("day");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}

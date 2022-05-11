@@ -79,7 +79,7 @@ header ul img {
     display: block;
     width: 25px;
     margin: 5px auto 0px auto;
-    padding-top: 4px;
+    padding-top: 3px;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     background-color: var(--black);
@@ -127,7 +127,7 @@ section footer,
         /* linear-gradient(var(--random), var(--default)) padding-box, */
         linear-gradient(83.2deg, rgba(164, 53, 255, 1) 10.8%, rgba(99, 88, 238, 1) 94.3%) border-box;
     border-radius: 50em;
-    color: white;
+    color: var(--random);
 }
 
 .pageclip-form input {
