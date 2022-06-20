@@ -15,9 +15,8 @@
 }
 
 .container {
-    height: 100%;
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto 1fr;
 }
 
 body {
@@ -94,9 +93,11 @@ header ul img {
     display: none;
 }
 
-section {
+section { 
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr auto;
+    
 }
 
 section footer,

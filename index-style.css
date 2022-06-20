@@ -13,17 +13,20 @@
 }
 
 .container {
-    height: 100%;
+    height: 90%;
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
 
-
+section{
+    align-self: flex-end;
+}
 
 body {
     margin: 100px 125px;
     color: var(--black);
     background-color: var(--random);
+    height: 100vh;
     --random: #ffffff;
     --default: #ffffff;
     --black: #121212;
@@ -148,6 +151,11 @@ header ul svg {
     height: auto;
 }
 
+section{
+    align-items: flex-end;
+    align-self: end;
+}
+
 /* responsive */
 
 @media(max-width: 960px) {
@@ -229,8 +237,6 @@ header ul svg {
 }
 
 @media(max-width: 480px) {
-
-    
 
     .nav-menu { 
         width: 45%;
