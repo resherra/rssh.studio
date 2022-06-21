@@ -1,9 +1,0 @@
-User-agent: *
-Allow: /index.html
-Allow: /Contact.html
-Allow: /Blog.html
-
-User-agent: Googlebot-Image
-Disallow: /
-
-Sitemap: https://lazych.me/sitemap.xml
