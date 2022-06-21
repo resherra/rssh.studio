@@ -13,7 +13,7 @@
 }
 
 .container {
-    height: 90%;
+    height: 50vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
