@@ -1,0 +1,16 @@
+.nav {
+    @include flex(space-between, center);
+    padding: $primary-padding;
+
+    &__right {
+
+        ul{
+            @include flex(space-between, center);
+            gap: 10px;
+
+            li {
+                list-style: none;
+            }
+        }
+    }
+} 

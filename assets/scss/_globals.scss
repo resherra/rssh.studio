@@ -1,0 +1,31 @@
+@function rem($value){
+    $remValue: $value;
+
+    @if(type-of($value) == number){
+           $remValue: ($value / 16) + rem; 
+    }
+    @return $remValue
+
+}
+
+$primary-font: Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue;
+$primary-background: #f0f0f0;
+$elements-color: #212121;
+$primary-padding: 10px;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $primary-font;
+}
+
+@mixin flex($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
