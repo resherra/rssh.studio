@@ -8,7 +8,7 @@
 
 }
 
-$primary-font: Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue;
+$primary-font: montserrat ,Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue;
 $primary-background: #f0f0f0;
 $primary-color: #121212;
 $primary-padding: rem(10);
@@ -33,4 +33,16 @@ body {
     justify-content: $justify;
     align-items: $align;
     gap: $gap;
+}
+
+@mixin input{
+    background:
+    linear-gradient(#121212, #121212) padding-box,
+        linear-gradient(83.2deg, rgb(164, 53, 255) 10.8%, rgba(99, 88, 238, 1) 94.3%) border-box;
+    border-radius: 50em;
+    border: 2px solid transparent;
+    padding: 10px 20px 10px 20px;
+    font-family: "montserrat";
+    margin-bottom: 10px;
+    outline: none;
 }

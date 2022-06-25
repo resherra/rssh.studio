@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue;
+  font-family: montserrat, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue;
   background-color: #121212;
 }
 
@@ -52,18 +52,36 @@ body {
   flex-direction: column;
   height: 100%;
 }
-.wrapper h3, .wrapper h4 {
+.wrapper h3, .wrapper h4, .wrapper p {
   text-align: center;
-  font-size: 20px;
   font-weight: 300;
+}
+.wrapper p {
+  line-height: 3.125rem;
+}
+.wrapper h3, .wrapper h4 {
   margin: 2.5rem;
 }
 .wrapper h3 span, .wrapper h4 span {
   background: linear-gradient(83.2deg, rgb(164, 53, 255) 10.8%, rgb(99, 88, 238) 94.3%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  cursor: pointer;
   font-weight: 500;
+}
+.wrapper .pageclip-form {
+  margin: 20px;
+}
+.wrapper .pageclip-form input, .wrapper .pageclip-form button {
+  background: linear-gradient(#121212, #121212) padding-box, linear-gradient(83.2deg, rgb(164, 53, 255) 10.8%, rgb(99, 88, 238) 94.3%) border-box;
+  border-radius: 50em;
+  border: 2px solid transparent;
+  padding: 10px 20px 10px 20px;
+  font-family: "montserrat";
+  margin-bottom: 10px;
+  outline: none;
+}
+.wrapper .pageclip-form button {
+  cursor: pointer;
 }
 
 footer {
