@@ -13,7 +13,9 @@ body {
 }
 
 .container {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   max-width: 1366px;
   padding: 50px;
   margin: 0 auto;
@@ -39,7 +41,6 @@ body {
   gap: 2.5rem;
 }
 .nav__right ul li {
-  font-size: 1.125rem;
   font-weight: 300;
 }
 
@@ -52,17 +53,17 @@ body {
   flex-direction: column;
   height: 100%;
 }
-.wrapper h3, .wrapper h4, .wrapper p {
+.wrapper h3, .wrapper p, .wrapper .blog {
   text-align: center;
   font-weight: 300;
 }
-.wrapper p {
+.wrapper p, .wrapper .blog {
   line-height: 3.125rem;
 }
-.wrapper h3, .wrapper h4 {
+.wrapper h3 {
   margin: 2.5rem;
 }
-.wrapper h3 span, .wrapper h4 span {
+.wrapper h3 span {
   background: linear-gradient(83.2deg, rgb(164, 53, 255) 10.8%, rgb(99, 88, 238) 94.3%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

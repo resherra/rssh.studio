@@ -1,5 +1,7 @@
 .container {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     max-width: 1366px;
     padding: 50px;
     margin: 0 auto;

@@ -2,20 +2,19 @@
 
         %text  {
                 text-align: center;
-                font-weight: 300;
-                
+                font-weight: 300;                
         }
 
         @include flex(center, center);
         flex-direction: column;
         height: 100%;
 
-        p{
+        p, .blog{
                 @extend %text;
                 line-height: rem(50);
         }
 
-        h3, h4{
+        h3{
             @extend %text;
             margin: rem(40);
             span {
