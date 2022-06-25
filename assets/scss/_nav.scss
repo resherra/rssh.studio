@@ -1,15 +1,21 @@
 .nav {
-    @include flex(space-between, center);
-    padding: $primary-padding;
+    @include flex(space-between, baseline);
+    
+    &__left {
+        img, svg{
+            width: 80px;
+            height: auto
+        }
+    }
 
     &__right {
 
         ul{
-            @include flex(space-between, center);
-            gap: 10px;
+            @include flex(space-between, center, rem(40));
 
             li {
-                list-style: none;
+                font-size: rem(18);
+                font-weight: 300;
             }
         }
     }
