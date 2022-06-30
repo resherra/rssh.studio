@@ -82,6 +82,7 @@ body {
   background: none;
   border: none;
   width: 1.5rem;
+  outline: none;
   cursor: pointer;
   display: none;
   position: relative;
