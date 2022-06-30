@@ -1,6 +1,3 @@
- console.log(`halo`)
-
-
         function load(target, url) {
             var r = new XMLHttpRequest();
             r.open("GET", url, true);
@@ -71,5 +68,7 @@
                 
             })
         }
+
+
 
 
