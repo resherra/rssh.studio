@@ -12,6 +12,7 @@ $primary-font: montserrat ,Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helve
 $primary-color: #f0f0f0;
 $primary-background: #121212;
 $primary-padding: rem(10);
+$maxMeduim: 768px;
 
 * {
     margin: 0;
@@ -25,6 +26,16 @@ $primary-padding: rem(10);
 body {
     font-family: $primary-font;
     background-color: $primary-background;
+}
+
+
+.bar {
+    display: block;
+    background: $primary-color;
+    height: 2px;
+    margin-bottom: 3px;
+    border-radius: rem(50);
+    z-index: 10;
 }
 
 @mixin flex($justify, $align, $gap: 0, $direction: row) {

@@ -149,3 +149,23 @@
         for (var e = document.querySelectorAll("." + m.cssBase), t = 0; t < e.length; t++) m.form(e[t])
     }())
 }(this || window || global);
+
+var form = document.querySelector('.pageclip-form')
+Pageclip.form(form, {
+  onSubmit: function (event) { },
+  onResponse: function () { 
+    window.location.href = "Blog.html";
+  },
+})
+
+
+// console.log(`${document.title}`)
+
+
+// var form = document.querySelector('.pageclip-form')
+// Pageclip.form(form, {
+//   onSubmit: function (event) { },
+//   onResponse: function () { 
+//     window.location.href = "Blog.html";
+//   },
+// })

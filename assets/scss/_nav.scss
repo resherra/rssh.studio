@@ -4,17 +4,57 @@
     &__left {
         img, svg{
             width: 80px;
-            height: auto
+            height: auto;
         }
     }
 
     &__right {
+
 
         ul{
             @include flex(space-between, center, rem(40));
 
             li {
                 font-weight: 300;
+
+                @media only screen and (max-width: $maxMeduim) {
+                    padding: 10px;
+                    padding-left: 20px;
+                }
+            }
+
+                @media only screen and (max-width: $maxMeduim) {
+                    display: none;
+                }
+
+        }
+
+        .open {
+            @media only screen and (max-width: $maxMeduim) {
+                // background-color: burlywood;
+                background-color: rgba(255, 255, 255, 0.15);
+                backdrop-filter: blur(2px);
+                display: block;
+                position: absolute;
+                top: 0;
+                height: 100vh;
+                width: rem(200);
+                right: 0;
+                text-align: left;
+                padding-top: rem(100);
+            }
+        }
+
+        .toggle-menu {
+            background: none;
+            border: none;
+            width: rem(24);
+            cursor: pointer;
+            display: none;
+            position: relative;
+
+            @media only screen and (max-width: $maxMeduim ) {
+                display: block;
             }
         }
     }

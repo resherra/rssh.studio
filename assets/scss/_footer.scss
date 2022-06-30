@@ -1,4 +1,9 @@
 footer {
     height: 100%;
     @include flex(end, flex-end, rem(20));
+    
+    @media only screen and (max-width: $maxMeduim) {
+            display: none;
+
+        }
 }
