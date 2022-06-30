@@ -5,6 +5,11 @@
         img, svg{
             width: 80px;
             height: auto;
+
+            @media only screen and (max-width: $small) {
+                width: 60px;
+                height: auto;
+            }
         }
     }
 
@@ -31,17 +36,16 @@
 
         .open {
             @media only screen and (max-width: $maxMeduim) {
-                // background-color: burlywood;
-                background-color: rgba(255, 255, 255, 0.15);
+                background-color: rgba(105, 105, 105, 0.15);
                 backdrop-filter: blur(2px);
                 display: block;
                 position: absolute;
                 top: 0;
                 height: 100vh;
-                width: rem(200);
+                width: 40vw;
                 right: 0;
                 text-align: left;
-                padding-top: rem(100);
+                padding-top: rem(60);
             }
         }
 

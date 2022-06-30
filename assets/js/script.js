@@ -34,6 +34,7 @@
 
         
         whenReady("load", toggle)
+
         
         
         // toggle-menu
@@ -41,17 +42,34 @@
             function toggle() {
             const toggleBtn = document.querySelector(`.toggle-menu`)
             const li = document.getElementById(`links`)
-            
-            toggleBtn.addEventListener(`click`, function(){
+                
+                // stop propagation on menu
+
+            li.onclick = function (e) {
+                e.stopPropagation();
+            }
+
+            toggleBtn.onclick = function (e) {
+
+                // stop propagation on <span>
+                e.stopPropagation();
+
+                // toggle class open on links
                 li.classList.toggle(`open`)
-                console.log(`jack`)
+            }
+            
+            document.addEventListener(`click`, (e) => {
+                if (e.target !== toggleBtn && e.target !== li) {
+                    //check if menu is open
+                    if (li.classList.contains(`open`)) {
+                        
+                        li.classList.toggle(`open`)
+
+                    }
+
+                }
+                
             })
-        
         }
-        
-
-
-
-
 
 
