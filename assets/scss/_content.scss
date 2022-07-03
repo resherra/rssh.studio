@@ -9,6 +9,10 @@
         flex-direction: column;
         height: 100%;
 
+
+        animation: slide-in 0.7s;
+
+
         p, .blog{
                 @extend %text;
                 line-height: 1.5;

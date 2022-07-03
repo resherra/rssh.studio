@@ -7,7 +7,8 @@
     margin: 0 auto;
     height: 100vh;
 
-    @media only screen and (max-width: $phone) {
+    @media only screen and (max-width: $small) {
         padding: 20px;        
     }
+
 }

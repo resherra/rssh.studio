@@ -34,30 +34,39 @@
 
         
         
-        // toggle-menu
+        // toggle-button
             
             function toggle() {
-            const toggleBtn = document.querySelector(`.toggle-menu`)
+            const toggleBtn = document.querySelector(`.toggle-button`)
             const li = document.getElementById(`links`)
+
+            console.log(toggleBtn.classList)
                 
-                // stop propagation on menu
+                // stop propagation on button
 
             li.onclick = function (e) {
                 e.stopPropagation();
             }
+
+            
 
             toggleBtn.onclick = function (e) {
 
                 // stop propagation on <span>
                 e.stopPropagation();
 
+                
+                // button bars transition
+                toggleBtn.classList.toggle(`active`)
+                
                 // toggle class open on links
                 li.classList.toggle(`open`)
+
             }
             
             document.addEventListener(`click`, (e) => {
                 if (e.target !== toggleBtn && e.target !== li) {
-                    //check if menu is open
+                    //check if button is open
                     if (li.classList.contains(`open`)) {
                         
                         li.classList.toggle(`open`)
@@ -68,7 +77,3 @@
                 
             })
         }
-
-
-
-

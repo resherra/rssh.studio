@@ -157,12 +157,3 @@ Pageclip.form(form, {
     window.location.href = "Blog.html";
   },
 })
-
-
-var form = document.querySelector('.pageclip-form')
-Pageclip.form(form, {
-  onSubmit: function (event) { },
-  onResponse: function () { 
-    window.location.href = "blog.html";
-  },
-})
