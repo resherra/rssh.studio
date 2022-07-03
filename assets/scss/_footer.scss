@@ -4,5 +4,6 @@ footer {
     
     @media only screen and (max-width: $small) {
         @include flex(end, flex-end, rem(10));    
+        display: fixed;
     }
 }

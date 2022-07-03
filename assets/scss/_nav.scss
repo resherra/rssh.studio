@@ -1,6 +1,8 @@
 .nav {
     @include flex(space-between, baseline);
     
+    
+    
     &__left {
         img, svg{
             width: 80px;
@@ -14,10 +16,10 @@
     }
 
     &__right {
-
-
         
         &--pages {
+
+            
             
             ul{
                 @include flex(space-between, center, rem(40));
@@ -48,7 +50,6 @@
                     right: 0;
                     text-align: right;
                     padding-top: rem(60);          
-                    animation: slide-bar 0.2s reverse;
                     padding-right: 10px;
             
              
