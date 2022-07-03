@@ -2,9 +2,7 @@ footer {
     height: 100%;
     @include flex(end, flex-end, rem(20));
     
-    @media only screen and (max-width: $maxMeduim) {
-            display: none;
-        }
-
-
+    @media only screen and (max-width: $small) {
+        @include flex(end, flex-end, rem(10));    
+    }
 }

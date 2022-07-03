@@ -86,7 +86,7 @@ body {
 }
 @media only screen and (max-width: 426px) {
   .nav__left img, .nav__left svg {
-    width: 40px;
+    width: 55px;
     height: auto;
   }
 }
@@ -123,7 +123,7 @@ body {
     right: 0;
     text-align: right;
     padding-top: 3.75rem;
-    animation: slide-bar 0.3s reverse;
+    animation: slide-bar 0.2s reverse;
     padding-right: 10px;
   }
 }
@@ -223,8 +223,12 @@ footer {
   align-items: flex-end;
   gap: 1.25rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 426px) {
   footer {
-    display: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: flex-end;
+    gap: 0.625rem;
   }
 }/*# sourceMappingURL=style.css.map */

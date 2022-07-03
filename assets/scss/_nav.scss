@@ -7,7 +7,7 @@
             height: auto;
 
             @media only screen and (max-width: $small) {
-                width: 40px;
+                width: 55px;
                 height: auto;
             }
         }
@@ -48,7 +48,7 @@
                     right: 0;
                     text-align: right;
                     padding-top: rem(60);          
-                    animation: slide-bar 0.3s reverse;
+                    animation: slide-bar 0.2s reverse;
                     padding-right: 10px;
             
              
