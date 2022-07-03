@@ -73,6 +73,7 @@
             cursor: pointer;
             display: none;
             position: relative;
+            -webkit-tap-highlight-color: transparent;
             
             :nth-child(1) {
                 transform: translateY(0px) rotate(0deg);

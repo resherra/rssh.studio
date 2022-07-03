@@ -141,6 +141,7 @@ body {
   cursor: pointer;
   display: none;
   position: relative;
+  -webkit-tap-highlight-color: transparent;
 }
 .nav__right .toggle-button :nth-child(1) {
   transform: translateY(0px) rotate(0deg);
@@ -187,7 +188,6 @@ body {
 }
 .wrapper p, .wrapper .blog {
   line-height: 1.5;
-  margin-bottom: 3.125rem;
 }
 .wrapper p span, .wrapper h3 span {
   background: linear-gradient(83.2deg, rgb(164, 53, 255) 10.8%, rgb(99, 88, 238) 94.3%);
