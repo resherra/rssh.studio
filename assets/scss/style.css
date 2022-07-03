@@ -5,6 +5,7 @@
   list-style: none;
   text-decoration: none;
   color: #f0f0f0;
+  font-size: 16px;
 }
 
 body {
@@ -192,11 +193,13 @@ body {
 .wrapper .pageclip-form input, .wrapper .pageclip-form button {
   background: linear-gradient(#121212, #121212) padding-box, linear-gradient(83.2deg, rgb(164, 53, 255) 10.8%, rgb(99, 88, 238) 94.3%) border-box;
   border-radius: 50em;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   padding: 10px 20px 10px 20px;
-  font-family: "montserrat";
+  font-family: montserrat, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue;
   margin-bottom: 10px;
   outline: none;
+  font-size: 16px;
+  font-weight: 300;
 }
 .wrapper .pageclip-form button {
   cursor: pointer;
