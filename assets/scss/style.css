@@ -54,7 +54,7 @@ body {
   margin: 0 auto;
   height: 100vh;
 }
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 450px) {
   .container {
     padding: 20px;
   }
@@ -71,7 +71,7 @@ body {
   width: 80px;
   height: auto;
 }
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 450px) {
   .nav__left img, .nav__left svg {
     width: 55px;
     height: auto;
@@ -113,7 +113,7 @@ body {
     padding-right: 10px;
   }
 }
-@media only screen and (min-width: 426px) {
+@media only screen and (min-width: 450px) {
   .nav__right--pages .open {
     padding-top: 7.5rem;
     padding-right: 40px;
@@ -182,7 +182,7 @@ body {
   -webkit-text-fill-color: transparent;
   font-weight: 500;
 }
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 450px) {
   .wrapper .pageclip-form {
     display: flex;
     flex-direction: column;
@@ -210,7 +210,7 @@ footer {
   align-items: flex-end;
   gap: 1.25rem;
 }
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 450px) {
   footer {
     display: flex;
     flex-direction: row;
