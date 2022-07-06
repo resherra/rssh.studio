@@ -39,8 +39,6 @@
             function toggle() {
             const toggleBtn = document.querySelector(`.toggle-button`)
             const li = document.getElementById(`links`)
-
-            console.log(toggleBtn.classList)
                 
                 // stop propagation on button
 
