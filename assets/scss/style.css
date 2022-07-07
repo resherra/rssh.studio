@@ -6,6 +6,7 @@
   text-decoration: none;
   color: #f0f0f0;
   font-size: 16px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -68,14 +69,44 @@ body {
   align-items: baseline;
   gap: 0;
 }
-.nav__left img, .nav__left svg {
+.nav__left img,
+.nav__left svg {
   width: 80px;
   height: auto;
 }
 @media only screen and (max-width: 450px) {
-  .nav__left img, .nav__left svg {
+  .nav__left img,
+.nav__left svg {
     width: 55px;
     height: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .nav__right--pages #links {
+    background-color: rgba(105, 105, 105, 0.15);
+    -webkit-backdrop-filter: blur(1.5px);
+            backdrop-filter: blur(1.5px);
+    display: block;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    padding-top: 3.75rem;
+    padding-right: 10px;
+    transition: 0.25s ease;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .nav__right--pages #links.open {
+    right: 0;
+  }
+}
+@media only screen and (min-width: 450px) {
+  .nav__right--pages #links.open {
+    padding-top: 7.5rem;
+    padding-right: 40px;
   }
 }
 .nav__right--pages ul {
@@ -96,28 +127,6 @@ body {
 @media only screen and (max-width: 768px) {
   .nav__right--pages ul {
     display: none;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .nav__right--pages .open {
-    background-color: rgba(105, 105, 105, 0.15);
-    -webkit-backdrop-filter: blur(2px);
-            backdrop-filter: blur(2px);
-    display: block;
-    position: fixed;
-    top: 0;
-    height: 100vh;
-    width: 100vw;
-    right: 0;
-    text-align: right;
-    padding-top: 3.75rem;
-    padding-right: 10px;
-  }
-}
-@media only screen and (min-width: 450px) {
-  .nav__right--pages .open {
-    padding-top: 7.5rem;
-    padding-right: 40px;
   }
 }
 .nav__right .toggle-button {

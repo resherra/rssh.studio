@@ -1,19 +1,20 @@
-@function rem($value){
+@function rem($value) {
     $remValue: $value;
 
-    @if(type-of($value) == number){
-           $remValue: calc($value / 16) + rem; 
+    @if(type-of($value)==number) {
+        $remValue: calc($value / 16)+rem;
     }
-    @return $remValue
 
+    @return $remValue
 }
 
-$primary-font: montserrat ,Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue;
+$primary-font: montserrat, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue;
 $primary-color: #f0f0f0;
 $primary-background: #121212;
 $primary-padding: rem(10);
 $maxMeduim: 768px;
 $small: 450px;
+
 
 
 * {
@@ -24,6 +25,8 @@ $small: 450px;
     text-decoration: none;
     color: $primary-color;
     font-size: 16px;
+    -webkit-tap-highlight-color: transparent;
+
 }
 
 body {
@@ -49,7 +52,7 @@ body {
         opacity: 0;
         transform: translateY(20px);
     }
-    
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -66,9 +69,9 @@ body {
     gap: $gap;
 }
 
-@mixin input{
+@mixin input {
     background:
-    linear-gradient(#121212, #121212) padding-box,
+        linear-gradient(#121212, #121212) padding-box,
         linear-gradient(83.2deg, rgb(164, 53, 255) 10.8%, rgba(99, 88, 238, 1) 94.3%) border-box;
     border-radius: 50em;
     border: 1px solid transparent;

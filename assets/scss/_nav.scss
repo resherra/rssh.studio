@@ -1,10 +1,12 @@
 .nav {
     @include flex(space-between, baseline);
-    
-    
-    
+
+
+
     &__left {
-        img, svg{
+
+        img,
+        svg {
             width: 80px;
             height: auto;
 
@@ -16,51 +18,60 @@
     }
 
     &__right {
-        
+
         &--pages {
 
-            
-            
-            ul{
+
+
+            #links {
+
+                @media only screen and (max-width: $maxMeduim) {
+                    background-color: rgba(105, 105, 105, 0.15);
+                    backdrop-filter: blur(1.5px);
+                    display: block;
+                    position: fixed;
+                    right: -100%;
+                    top: 0;
+                    bottom: 0;
+                    width: 100%;
+                    text-align: right;
+                    padding-top: rem(60);
+                    padding-right: 10px;
+
+                    transition: 0.25s ease;
+                }
+
+                &.open {
+                    @media only screen and (max-width: $maxMeduim) {
+                        right: 0;
+                    }
+
+                    @media only screen and (min-width: $small) {
+                        padding-top: rem(120);
+                        padding-right: 40px;
+                    }
+
+                }
+            }
+
+            ul {
                 @include flex(space-between, center, rem(40));
-    
+
                 li {
                     font-weight: 300;
-    
+
                     @media only screen and (max-width: $maxMeduim) {
                         padding: 10px;
                     }
                 }
-    
-                    @media only screen and (max-width: $maxMeduim) {
-                        display: none;
-                    }
-    
+
+                @media only screen and (max-width: $maxMeduim) {
+                    display: none;
+                }
+
+
             }
 
-            .open {
-                @media only screen and (max-width: $maxMeduim) {
-                    background-color: rgba(105, 105, 105, 0.15);
-                    backdrop-filter: blur(2px);
-                    display: block;
-                    position: fixed;
-                    top: 0;
-                    height: 100vh;
-                    width: 100vw;
-                    right: 0;
-                    text-align: right;
-                    padding-top: rem(60);          
-                    padding-right: 10px;
-            
-             
-                    }
-
-                @media only screen and (min-width: $small) {
-                    padding-top: rem(120);       
-                    padding-right: 40px;
-                }
-                
-                }
 
         }
 
@@ -75,7 +86,7 @@
             display: none;
             position: relative;
             -webkit-tap-highlight-color: transparent;
-            
+
             :nth-child(1) {
                 transform: translateY(0px) rotate(0deg);
                 transition: all 0.1s linear;
@@ -112,8 +123,8 @@
                 }
 
             }
-            
+
 
         }
     }
-} 
+}
