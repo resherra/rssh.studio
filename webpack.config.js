@@ -7,13 +7,13 @@ const config = {
     entry: [`./app/app.js`, `./app/pageclip.js`],
     output : {
         filename: `myPackage.js`,
-        path: path.resolve(__dirname, `.`)
+        path: path.resolve(__dirname, `public`)
     },
     plugins: [],
     mode: 'development',   
     devServer: {
         port: 8080,
-        static: path.resolve(__dirname, '.'),
+        static: path.resolve(__dirname, 'public'),
         hot: true
     },
     module: {
