@@ -1,4 +1,4 @@
-import "../assets/scss/style.scss"
+import "./style.css"
 import serve from "./script"
 
 
