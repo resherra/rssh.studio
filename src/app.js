@@ -2,6 +2,7 @@ import "./style.css"
 import serve from "./script"
 
 
+
     let includes = Array.from(document.querySelectorAll('[data-include]'));
     includes.map(include => {
         let file = include.dataset['include'] + '.html';
