@@ -7,22 +7,10 @@ function serve(target, url) {
 
         // toggle-button
 
-        let toggleBtn = document.querySelector(`.toggle-button`)
-        let li = document.getElementById(`links`)
-
-        li.addEventListener(`click`, function() {
-            stopPropagation();
+        document.querySelector(`.toggleButton`).addEventListener(`click`, function push(){
+            console.log(`welcome back jack!`)
         })
-
-
-        toggleBtn.addEventListener(`click`, function() {
-            // button bars transition
-            toggleBtn.classList.toggle(`active`)
-            
-            // toggle class open on links
-            li.classList.toggle(`open`)
-        })
-                
+        
     };
     r.send();
     
