@@ -1,18 +1,20 @@
-<div class="wrapper">
-                <h3 class="blog">There's no blog post yet!
-                    <br>
-                    Subscribe to lazych.me to stay updated :)
+<div class="h-[34rem] max-w-screen-lg m-4 lg:m-auto">
+    <div class="h-full flex flex-col justify-center gap-4 text-center">
+        <h3>There's no blog post yet!
+            <br>
+            Subscribe to lazych.me to stay updated :)
+        </h3>
 
-                </h3>
-                <form action="https://send.pageclip.co/QhZBmilHTVObQ07fe7oc1QfxGXGVSvTI" class="pageclip-form"
-                    method="post">
-                    <!-- Replace these inputs with your own. Make sure they have a "name" attribute! --> <input
-                        type="email" name="email" placeholder="youremail@example.com" />
-
-                        <button type="submit" class="pageclip-form__submit">Send</button>
-                </form>
-
-            </div><div class="wrapper">
-
-
+        <form action="https://send.pageclip.co/QhZBmilHTVObQ07fe7oc1QfxGXGVSvTI" class="pageclip-form"
+            method="post">
+            <div class="flex flex-col items-center justify-center gap-4">
+                <div class="w-fit rounded-[2.5rem] p-[0.1rem] bg-gradient-to-r from-gradientFrom to-gradientTo">
+                    <input type="email" name="email" placeholder="youremail@example.com" oninvalid="this.setCustomValidity('Please Enter valid email')" class="border py-1 w-[14rem] pl-5 bg-mainColor rounded-[2.5rem] border-none focus:outline-none text-xs"/>
+                </div>    
+                <div class="w-fit rounded-[2.5rem] p-[0.1rem] bg-gradient-to-r from-gradientFrom to-gradientTo">
+                    <button type="submit" class="pageclip-form__submit border py-1 p-5 bg-mainColor rounded-[2.5rem] border-none hover:bg-gradient-to-r from-gradientFrom to-gradientTo text-xs hover:text-mainColor">Send</button>
+                </div>                
+            </div>
+        </form>
+    </div>
 </div>

@@ -1,24 +1,20 @@
-<nav class="nav" >
-    <div class="nav__left">
-        <div class="personal-logo">
-                <a href="https://lazych.me/" title="Home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 97 48.5" fill="#f0f0f0" role="img" aria-labelledby="logo"><path id="Layer_2_2_" class="st0" d="M0,0h48.5v48.5H0V0z M97,48.5H48.5L97,11.2V48.5z"/></svg>
-</a>
-        </div>
+<nav class="max-w-screen-lg m-4 lg:m-auto flex items-baseline justify-between">
+    <div class="w-12 md:w-14">
+            <a href="./index.html"><img src="./images/logo.svg" alt=""></a>
     </div>
 
-    <div class="nav__right">
-        <div class="nav__right--pages">
-
-            <ul id="links">
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="blog.html" class="nav-link">Blog</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
+    <div>
+        <div>
+            <ul class="lg:flex gap-5 lg:mt-10 hidden" id="menu-list">
+                <li><a href="./about.html" class="nav-link">About</a></li>
+                <li><a href="./blog.html" class="nav-link">Blog</a></li>
+                <li><a href="./contact.html" class="nav-link">Contact</a></li>
             </ul>
             
-            <button class="toggle-button" aria-label="toggle">
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
+            <button class="toggle-button w-5 cursor-pointer lg:hidden" aria-label="toggle">
+                <span class="block bg-textColor h-0.5 mb-0.5 rounded-lg"></span>
+                <span class="block bg-textColor h-0.5 mb-0.5 rounded-lg"></span>
+                <span class="block bg-textColor h-0.5 rounded-lg"></span>
             </button>
         </div>
     </div>
