@@ -19,7 +19,6 @@
   "dependencies": {
     "autoprefixer": "^10.4.12",
     "css-loader": "^6.7.1",
-    "mini-css-extract-plugin": "^2.6.1",
     "postcss": "^8.4.17",
     "postcss-loader": "^7.0.1",
     "style-loader": "^3.3.1",
