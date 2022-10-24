@@ -16,21 +16,21 @@ class servicesPatterns {
     }
 
     scrollIntoIdeate() {
-        this.ideateBlock.scrollIntoView({behavior: 'smooth'}),
-        this.ideateBlock.classList.add("bg-clip-text", "text-transparent", "bg-gradient-to-r", "from-gradientFrom", "to-white"),
+        this.ideateBlock.scrollIntoView({behavior: 'smooth', block: 'center'}),
+        this.ideateBlock.classList.add("bg-clip-text", "text-transparent", "bg-gradient-to-r", "from-gradientFrom", "to-gradientTo"),
         this.prototypeBlock.classList.remove("bg-clip-text", "text-transparent", "bg-gradient-to-r", "from-gradientFrom", "to-gradientTo"),
         this.buildBlock.classList.remove("bg-clip-text", "text-transparent", "bg-gradient-to-r", "from-gradientFrom", "to-gradientTo")
     }
     
     scrollIntoPrototype() {
-        this.prototypeBlock.scrollIntoView({behavior: 'smooth'}),
+        this.prototypeBlock.scrollIntoView({behavior: 'smooth', block: 'center'}),
         this.prototypeBlock.classList.add("bg-clip-text", "text-transparent", "bg-gradient-to-r", "from-gradientFrom", "to-gradientTo"),
         this.ideateBlock.classList.remove("bg-clip-text", "text-transparent", "bg-gradient-to-r", "from-gradientFrom", "to-gradientTo"),
         this.buildBlock.classList.remove("bg-clip-text", "text-transparent", "bg-gradient-to-r", "from-gradientFrom", "to-gradientTo")
     }
     
     scrollIntoBuild() {
-        this.buildBlock.scrollIntoView({behavior: 'smooth'}),
+        this.buildBlock.scrollIntoView({behavior: 'smooth', block: 'center'}),
         this.buildBlock.classList.add("bg-clip-text", "text-transparent", "bg-gradient-to-r", "from-gradientFrom", "to-gradientTo"),
         this.prototypeBlock.classList.remove("bg-clip-text", "text-transparent", "bg-gradient-to-r", "from-gradientFrom", "to-gradientTo"),
         this.ideateBlock.classList.remove("bg-clip-text", "text-transparent", "bg-gradient-to-r", "from-gradientFrom", "to-gradientTo")
