@@ -1,6 +1,7 @@
 import "./style.css"
 import serve from "./script"
 import MobileMenu from "./mobileMenu"
+import servicesPatterns from "./servicesPatterns";
 
 // inject pages to the browser
 
@@ -16,7 +17,9 @@ setTimeout(function() {
     new MobileMenu()
 }, 1000);
 
-
+setTimeout(function() {
+    new servicesPatterns()
+}, 1000);
 
 // enabling hot modules replacement
 
