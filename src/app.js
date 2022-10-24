@@ -1,6 +1,6 @@
 import "./style.css"
 import serve from "./script"
-import MobileMenu from "./mobileMenu";
+import MobileMenu from "./mobileMenu"
 
 // inject pages to the browser
 
@@ -15,6 +15,7 @@ includes.map(include => {
 setTimeout(function() {
     new MobileMenu()
 }, 1000);
+
 
 
 // enabling hot modules replacement
