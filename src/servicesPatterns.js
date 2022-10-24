@@ -17,7 +17,7 @@ class servicesPatterns {
 
     scrollIntoIdeate() {
         this.ideateBlock.scrollIntoView({behavior: 'smooth'}),
-        this.ideateBlock.classList.add("bg-clip-text", "text-transparent", "bg-gradient-to-r", "from-gradientFrom", "to-gradientTo"),
+        this.ideateBlock.classList.add("bg-clip-text", "text-transparent", "bg-gradient-to-r", "from-gradientFrom", "to-white"),
         this.prototypeBlock.classList.remove("bg-clip-text", "text-transparent", "bg-gradient-to-r", "from-gradientFrom", "to-gradientTo"),
         this.buildBlock.classList.remove("bg-clip-text", "text-transparent", "bg-gradient-to-r", "from-gradientFrom", "to-gradientTo")
     }
