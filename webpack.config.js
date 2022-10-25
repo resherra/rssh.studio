@@ -9,7 +9,7 @@ const config = {
     plugins: [],
     mode: 'development',   
     devServer: {
-        port: 8080,
+        port: 5000,
         static: path.resolve(__dirname, 'public'),
         hot: true,
         host: '0.0.0.0',
