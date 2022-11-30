@@ -1,5 +1,3 @@
-// import MobileMenu from "./mobileMenu";
-
 function serve(target, url) {
     var r = new XMLHttpRequest();
     r.open("GET", url, true);

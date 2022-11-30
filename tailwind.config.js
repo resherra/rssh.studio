@@ -10,7 +10,7 @@ module.exports = {
           },
       extend: {
         colors: {
-          'mainColor': '#121212',
+          'mainColor': '#000000',
           'textColor': '#f1f1f1',
           'gridsColor': '#282828',
           'gradientFrom': '#ff9966',
