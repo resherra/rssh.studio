@@ -1,39 +1,18 @@
 class servicesPatterns {
     constructor() {
-        this.ideate = document.getElementById(`ideateClick`)
-        this.ideateBlock = document.getElementById(`Ideate`)
-        this.proto = document.getElementById(`prototypeClick`)
-        this.prototypeBlock = document.getElementById(`Prototype`)
-        this.build = document.getElementById(`buildClick`)
-        this.buildBlock = document.getElementById(`Build`)
+        this.patt = document.querySelector('.patterns')
         this.event()
     }
 
     event() {
-        this.ideate.addEventListener(`click`, () => this.scrollIntoIdeate())
-        this.proto.addEventListener(`click`, () => this.scrollIntoPrototype())
-        this.build.addEventListener(`click`, () => this.scrollIntoBuild())
+        this.patt.addEventListener('click', (e) => this.light(e))
     }
 
-    scrollIntoIdeate() {
-        this.ideateBlock.scrollIntoView({behavior: 'smooth', block: 'center'}),
-        this.ideateBlock.classList.add("bg-clip-text", "text-transparent", "bg-gradient-to-r", "from-gradientFrom", "to-gradientTo"),
-        this.prototypeBlock.classList.remove("bg-clip-text", "text-transparent", "bg-gradient-to-r", "from-gradientFrom", "to-gradientTo"),
-        this.buildBlock.classList.remove("bg-clip-text", "text-transparent", "bg-gradient-to-r", "from-gradientFrom", "to-gradientTo")
-    }
-    
-    scrollIntoPrototype() {
-        this.prototypeBlock.scrollIntoView({behavior: 'smooth', block: 'center'}),
-        this.prototypeBlock.classList.add("bg-clip-text", "text-transparent", "bg-gradient-to-r", "from-gradientFrom", "to-gradientTo"),
-        this.ideateBlock.classList.remove("bg-clip-text", "text-transparent", "bg-gradient-to-r", "from-gradientFrom", "to-gradientTo"),
-        this.buildBlock.classList.remove("bg-clip-text", "text-transparent", "bg-gradient-to-r", "from-gradientFrom", "to-gradientTo")
-    }
-    
-    scrollIntoBuild() {
-        this.buildBlock.scrollIntoView({behavior: 'smooth', block: 'center'}),
-        this.buildBlock.classList.add("bg-clip-text", "text-transparent", "bg-gradient-to-r", "from-gradientFrom", "to-gradientTo"),
-        this.prototypeBlock.classList.remove("bg-clip-text", "text-transparent", "bg-gradient-to-r", "from-gradientFrom", "to-gradientTo"),
-        this.ideateBlock.classList.remove("bg-clip-text", "text-transparent", "bg-gradient-to-r", "from-gradientFrom", "to-gradientTo")
+    light(e) {
+        let jk = document.getElementById(`services[data-link='${e.explicitOriginalTarget.attributes[0].nodeValue}']`)
+        let key = document.getElementById(`key[data-link='${e.explicitOriginalTarget.attributes[0].nodeValue}']`)
+        if(!jk) return;
+        this.key.classList.add("text-red-400")
     }
 }
 
