@@ -12,7 +12,6 @@ class MobileMenu {
     }
 
     toggleTheMenu() {
-        console.log(`hello jack!`)
          this.menuList.classList.toggle('hidden')
          this.menuList.classList.toggle('flex')
     }
