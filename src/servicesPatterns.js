@@ -17,23 +17,23 @@ class servicesPatterns {
 
     scrollIntoIdeate() {
         this.ideateBlock.scrollIntoView({behavior: 'smooth', block: 'center'}),
-        this.ideateBlock.classList.add("bg-clip-text", "text-transparent", "bg-gradient-to-r", "from-gradientFrom", "to-gradientTo"),
-        this.prototypeBlock.classList.remove("bg-clip-text", "text-transparent", "bg-gradient-to-r", "from-gradientFrom", "to-gradientTo"),
-        this.buildBlock.classList.remove("bg-clip-text", "text-transparent", "bg-gradient-to-r", "from-gradientFrom", "to-gradientTo")
+        this.ideateBlock.classList.add("text-red-300"),
+        this.prototypeBlock.classList.remove("text-red-300"),
+        this.buildBlock.classList.remove("text-red-300")
     }
     
     scrollIntoPrototype() {
         this.prototypeBlock.scrollIntoView({behavior: 'smooth', block: 'center'}),
-        this.prototypeBlock.classList.add("bg-clip-text", "text-transparent", "bg-gradient-to-r", "from-gradientFrom", "to-gradientTo"),
-        this.ideateBlock.classList.remove("bg-clip-text", "text-transparent", "bg-gradient-to-r", "from-gradientFrom", "to-gradientTo"),
-        this.buildBlock.classList.remove("bg-clip-text", "text-transparent", "bg-gradient-to-r", "from-gradientFrom", "to-gradientTo")
+        this.prototypeBlock.classList.add("text-red-300"),
+        this.ideateBlock.classList.remove("text-red-300"),
+        this.buildBlock.classList.remove("text-red-300")
     }
     
     scrollIntoBuild() {
         this.buildBlock.scrollIntoView({behavior: 'smooth', block: 'center'}),
-        this.buildBlock.classList.add("bg-clip-text", "text-transparent", "bg-gradient-to-r", "from-gradientFrom", "to-gradientTo"),
-        this.prototypeBlock.classList.remove("bg-clip-text", "text-transparent", "bg-gradient-to-r", "from-gradientFrom", "to-gradientTo"),
-        this.ideateBlock.classList.remove("bg-clip-text", "text-transparent", "bg-gradient-to-r", "from-gradientFrom", "to-gradientTo")
+        this.buildBlock.classList.add("text-red-300"),
+        this.prototypeBlock.classList.remove("text-red-300"),
+        this.ideateBlock.classList.remove("text-red-300")
     }
 }
 
