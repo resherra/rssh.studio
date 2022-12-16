@@ -1,25 +1,24 @@
 import "./style.css"
-import serve from "./script"
+import serve from "./requestFunction"
 import MobileMenu from "./mobileMenu"
 import servicesPatterns from "./servicesPatterns";
+import wait from "waait";
 
-// inject pages to the browser
-
+//serve content.
 let includes = Array.from(document.querySelectorAll('[data-include]'));
 includes.map(include => {
     let file = include.dataset['include'] + '.html';
     serve(include, file);
 });
 
-// toggle button callback function
 
-setTimeout(function() {
+async function toggleFunciton() {
+    await wait(1000)
     new MobileMenu()
-}, 1000);
+}
 
-setTimeout(function() {
-    new servicesPatterns()
-}, 1000);
+toggleFunciton()
+
 
 // enabling hot modules replacement
 
