@@ -1,21 +1,26 @@
 class servicesPatterns {
-    constructor() {
-        this.patt = document.querySelector('.patterns')
-        this.event()
-    }
+  constructor() {
+    this.services = document.querySelectorAll(".services");
+    this.event();
+  }
 
-    event() {
-        this.patt.addEventListener('click', (e) => this.light(e))
-    }
+  event() {
+    this.services.forEach((item) => {
+      item.addEventListener("click", (e) => this.light(e));
+    });
+  }
 
-    light(e) {
-        let jk = document.getElementById(`services[data-link='${e.explicitOriginalTarget.attributes[0].nodeValue}']`)
-        let key = document.getElementById(`key[data-link='${e.explicitOriginalTarget.attributes[0].nodeValue}']`)
-        // if(!jk) return;
-        // console.log('jack')
-    }
+  light(e) {
+    let tar = e.target;
+    let key = document.querySelectorAll(`[data-link]`);
+    key.forEach((item) => {
+      item.classList.remove("text-gradientFrom");
+      if (tar.dataset.link == item.dataset.link) {
+        item.classList.add("text-gradientFrom");
+        item.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+    });
+  }
 }
 
-export default servicesPatterns
-
-// e.explicitOriginalTarget.attributes[0].nodeValue
+export default servicesPatterns;
