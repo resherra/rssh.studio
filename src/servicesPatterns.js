@@ -1,6 +1,6 @@
 class servicesPatterns {
   constructor() {
-    this.services = document.querySelectorAll(".services");
+    this.services = document.querySelectorAll("[data-services]");
     this.event();
   }
 
@@ -12,11 +12,23 @@ class servicesPatterns {
 
   light(e) {
     let tar = e.target;
-    let key = document.querySelectorAll(`[data-link]`);
+    let key = document.querySelectorAll(`#services[data-link]`);
     key.forEach((item) => {
-      item.classList.remove("text-gradientFrom");
+      item.classList.remove(
+        "bg-clip-text",
+        "text-transparent",
+        "bg-gradient-to-r",
+        "from-gradientTo",
+        "to-gradientFrom"
+      );
       if (tar.dataset.link == item.dataset.link) {
-        item.classList.add("text-gradientFrom");
+        item.classList.add(
+          "bg-clip-text",
+          "text-transparent",
+          "bg-gradient-to-r",
+          "from-gradientTo",
+          "to-gradientFrom"
+        );
         item.scrollIntoView({ behavior: "smooth", block: "center" });
       }
     });
