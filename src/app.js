@@ -1,30 +1,36 @@
-import "./style.css";
-import serve from "./requestFunction";
-import MobileMenu from "./mobileMenu";
-import servicesPatterns from "./servicesPatterns";
-import wait from "waait";
+import React from "react"
+import { createRoot } from "react-dom/client"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import "./style.css"
 
-//serve content.
-let includes = Array.from(document.querySelectorAll("[data-include]"));
-includes.map((include) => {
-  // include = <div data-include="views/nav"></div>
-  let file = include.dataset["include"] + ".html";
-  //file = views/nav.html
-  //serve(target ,url)
-  // server(<div data-include="views/nav"></div>, views/nav.html)
-  serve(include, file);
-});
+//Components
+import Header from "./components/Header"
+import Home from "./components/Home"
+import About from "./components/About"
+import Blog from "./components/Blog"
+import Contact from "./components/Contact"
+import Footer from "./components/Footer"
 
-async function toggleFunciton() {
-  await wait(1000);
-  new MobileMenu();
-  new servicesPatterns();
+function App() {
+  return (
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/About" element={<About />}></Route>
+        <Route path="/Blog" element={<Blog />}></Route>
+        <Route path="/Contact" element={<Contact />}></Route>
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+  )
 }
 
-toggleFunciton();
+const root = createRoot(document.getElementById("app"))
+root.render(<App />)
 
 // enabling hot modules replacement
 
 if (module.hot) {
-  module.hot.accept();
+  module.hot.accept()
 }
