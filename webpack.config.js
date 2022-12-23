@@ -2,17 +2,17 @@ const path = require("path")
 // const HtmlWebpackPlugin = require("html-webpack-plugin")
 
 const config = {
-  entry: [`./src/App.js`],
+  entry: [`./public/App.js`],
   output: {
     // publicPath: "/",
-    path: path.resolve(__dirname, `src`),
+    path: path.resolve(__dirname, `public`),
     filename: `bundled.js`,
   },
   // plugins: [new HtmlWebpackPlugin({ template: "./src/index.html" })],
   mode: "development",
   devServer: {
     port: 8080,
-    static: path.resolve(__dirname, "src"),
+    static: path.resolve(__dirname, "public"),
     hot: true,
     liveReload: false,
     historyApiFallback: { index: "index.html" },
