@@ -4,7 +4,7 @@ import Page from "./Page"
 function Home() {
   return (
     <Page title="Home">
-      <div className="h-[32rem] max-w-screen-lg m-4 lg:m-auto">
+      <div className="h-[32rem] max-w-screen-lg p-4 lg:m-auto">
         <div className="h-full flex flex-col gap-10 justify-center text-center">
           <p className="content__home--heading">Hello! i'm Redouan, @lazych on the web. Front-end developer and UX/UI designer.</p>
           <p className="patterns">
@@ -26,7 +26,7 @@ function Home() {
         </div>
       </div>
       <div className="bg-gridsColor rounded-b-3xl lg:rounded-none w-screen-lg lg:m-auto clip-path-mypolygon lg:clip-path-none">
-        <div className="grid grid-rows-3 lg:grid-cols-3 lg:grid-rows-1 gap-5 lg:gap-10 pt-20 pb-10 lg:py-14 max-w-screen-lg m-4 lg:m-auto">
+        <div className="grid grid-rows-3 lg:grid-cols-3 lg:grid-rows-1 gap-5 lg:gap-10 pt-20 pb-10 lg:py-14 max-w-screen-lg p-4 lg:m-auto">
           <div className="bg-mainColor rounded-[2.5rem] p-8 flex flex-col justify-center lg:justify-start drop-shadow-md">
             <h3 id="services" data-link="link1" className="font-semibold pb-6 lg:pb-10 lg:pt-3">
               Ideate

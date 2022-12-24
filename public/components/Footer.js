@@ -5,7 +5,7 @@ import Page from "./Page"
 function Footer() {
   return (
     <Page>
-      <footer className="mt-[6rem] max-w-screen-lg m-4 lg:mx-auto flex flex-col gap-16 items-center text-center">
+      <footer className="pt-[6rem] max-w-screen-lg lg:mx-auto flex flex-col gap-16 items-center text-center">
         <div className="flex flex-col items-center gap-3">
           <h3 className="font-semibold">Find me on:</h3>
           <div className="flex gap-3">
@@ -33,7 +33,7 @@ function Footer() {
           </Link>
         </div>
 
-        <div className="flex gap-2 mb-2">
+        <div className="flex gap-2 pb-4">
           <img className="w-3" src="./images/copyright-icon.svg" alt="" />
           <p>lazych 2022</p>
         </div>

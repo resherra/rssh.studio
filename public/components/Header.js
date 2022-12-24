@@ -5,7 +5,7 @@ import Page from "./Page"
 function Header() {
   return (
     <Page>
-      <nav className="max-w-screen-lg m-4 lg:m-auto flex items-baseline justify-between">
+      <nav className="max-w-screen-lg p-4 lg:m-auto flex items-baseline justify-between">
         <div className="w-12 md:w-14">
           <Link to="./index.html">
             <img src="./images/logo.svg" alt="" />
