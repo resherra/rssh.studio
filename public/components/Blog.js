@@ -4,7 +4,7 @@ import Page from "./Page"
 function Blog() {
   return (
     <Page title="Blog">
-      <div className="h-[34rem] max-w-screen-lg m-4 lg:m-auto">
+      <div className="h-[34rem] max-w-screen-lg p-4 lg:m-auto">
         <div className="h-full flex flex-col justify-center gap-4 text-center">
           <h3>
             There's no blog post yet!

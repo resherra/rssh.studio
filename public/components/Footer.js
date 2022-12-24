@@ -9,15 +9,15 @@ function Footer() {
         <div className="flex flex-col items-center gap-3">
           <h3 className="font-semibold">Find me on:</h3>
           <div className="flex gap-3">
-            <Link to="https://twitter.com/lazycherrat" target="_blank">
+            <a href="https://twitter.com/lazycherrat" target="_blank">
               <img className="w-4" src="./images/twitter-icon.svg" alt="" />
-            </Link>
-            <Link to="https://www.linkedin.com/in/redouan-cherrat-b951b81bb/" target="_blank">
+            </a>
+            <a href="https://www.linkedin.com/in/redouan-cherrat-b951b81bb/" target="_blank">
               <img className="w-4" src="./images/linkedin-icon.svg" alt="" />
-            </Link>
-            <Link to="https://github.com/lazych" target="_blank">
+            </a>
+            <a href="https://github.com/lazych" target="_blank">
               <img className="w-4" src="./images/github-icon.svg" alt="" />
-            </Link>
+            </a>
           </div>
         </div>
 

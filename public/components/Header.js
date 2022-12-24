@@ -7,7 +7,7 @@ function Header() {
     <Page>
       <nav className="max-w-screen-lg p-4 lg:m-auto flex items-baseline justify-between">
         <div className="w-12 md:w-14">
-          <Link to="./index.html">
+          <Link to="/">
             <img src="./images/logo.svg" alt="" />
           </Link>
         </div>
@@ -32,7 +32,7 @@ function Header() {
               </li>
             </ul>
 
-            <button className="toggle-button w-5 cursor-pointer relative lg:hidden z-20" aria-label="toggle">
+            <button onClick={handleNav} className="toggle-button w-5 cursor-pointer relative lg:hidden z-20" aria-label="toggle">
               <span className="block bg-textColor h-0.5 mb-0.5 rounded-lg"></span>
               <span className="block bg-textColor h-0.5 mb-0.5 rounded-lg"></span>
               <span className="block bg-textColor h-0.5 rounded-lg"></span>
@@ -42,6 +42,10 @@ function Header() {
       </nav>
     </Page>
   )
+
+  function handleNav(e) {
+    console.log("test!")
+  }
 }
 
 export default Header

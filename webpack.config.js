@@ -4,7 +4,7 @@ const path = require("path")
 const config = {
   entry: [`./public/App.js`],
   output: {
-    // publicPath: "/",
+    publicPath: "/",
     path: path.resolve(__dirname, `public`),
     filename: `bundled.js`,
   },
