@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./public/**/*.html", "./src/**/*.js"],
+  content: ["./public/**/*.{js, jsx}"],
   theme: {
     clipPath: {
       mypolygon: "polygon(0% 7%, 100% 0%, 100% 100%, 0% 100%)",
@@ -20,4 +20,4 @@ module.exports = {
   },
 
   plugins: [require("tailwind-clip-path")],
-};
+}
