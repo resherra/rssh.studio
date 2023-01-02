@@ -3,12 +3,6 @@ import HomeServices from "./HomeServices"
 import Page from "./Page"
 
 function Home() {
-  const [active, setActive] = useState(false)
-
-  function handleClick() {
-    setActive(!active)
-  }
-
   return (
     <Page title="Home">
       <div className="h-[32rem] max-w-screen-lg p-4 lg:m-auto">
@@ -17,22 +11,13 @@ function Home() {
           <p className="patterns">
             I help my clients to
             <span className="bg-clip-text text-transparent bg-gradient-to-l from-gradientTo to-gradientFrom">
-              <span onClick={handleClick} className="font-semibold cursor-pointer select-none">
-                {" "}
-                Ideate.
-              </span>{" "}
-              <span onClick={handleClick} className="font-semibold cursor-pointer select-none">
-                Prototype.
-              </span>{" "}
-              <span onClick={handleClick} className="font-semibold cursor-pointer select-none">
-                Build.
-              </span>
+              <span className="font-semibold cursor-pointer select-none"> Ideate.</span> <span className="font-semibold cursor-pointer select-none">Prototype.</span> <span className="font-semibold cursor-pointer select-none">Build.</span>
             </span>
             seamless & User-friendly experiences.
           </p>
         </div>
       </div>
-      <HomeServices active={active} />
+      <HomeServices />
     </Page>
   )
 }
