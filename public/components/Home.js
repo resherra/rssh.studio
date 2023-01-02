@@ -11,7 +11,7 @@ function Home() {
           <p className="patterns">
             I help my clients to
             <span className="bg-clip-text text-transparent bg-gradient-to-l from-gradientTo to-gradientFrom">
-              <span className="font-semibold cursor-pointer select-none"> Ideate.</span> <span className="font-semibold cursor-pointer select-none">Prototype.</span> <span className="font-semibold cursor-pointer select-none">Build.</span>
+              <span className="font-semibold cursor-pointer select-none"> Ideate.</span> <span className="font-semibold cursor-pointer select-none">Prototype.</span> <span className="font-semibold cursor-pointer select-none">Build. </span>
             </span>
             seamless & User-friendly experiences.
           </p>

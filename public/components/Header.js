@@ -10,7 +10,7 @@ function Header() {
       <nav className="max-w-screen-lg p-4 lg:m-auto flex items-baseline justify-between">
         <div className="w-12 md:w-14">
           <Link to="/">
-            <img src="./images/logo.svg" alt="" />
+            <img src="./images/logo.svg" alt="" width="640" height="360" />
           </Link>
         </div>
 
