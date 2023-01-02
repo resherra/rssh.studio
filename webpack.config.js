@@ -1,5 +1,6 @@
+const currentTask = process.env.npm_lifecycle_event
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const path = require("path")
-// const HtmlWebpackPlugin = require("html-webpack-plugin")
 
 const config = {
   entry: [`./public/App.js`],
@@ -8,7 +9,7 @@ const config = {
     path: path.resolve(__dirname, `public`),
     filename: `bundled.js`,
   },
-  // plugins: [new HtmlWebpackPlugin({ template: "./src/index.html" })],
+  plugins: [],
   mode: "development",
   devServer: {
     port: 8080,
@@ -36,6 +37,12 @@ const config = {
       },
     ],
   },
+}
+
+if (currentTask == "build") {
+  config.mode = "production"
+  config.module.rules[0].use[0] = MiniCssExtractPlugin.loader
+  config.plugins.push(new MiniCssExtractPlugin({ filename: "main.css" }))
 }
 
 module.exports = config
