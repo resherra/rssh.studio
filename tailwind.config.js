@@ -1,23 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./public/**/*.{js, jsx}"],
-  theme: {
-    clipPath: {
-      mypolygon: "polygon(0% 7%, 100% 0%, 100% 100%, 0% 100%)",
-    },
-    fontFamily: {
-      sans: ["montserrat", "Segoe UI", "Roboto"],
-    },
-    extend: {
-      colors: {
-        mainColor: "#000000",
-        textColor: "#f1f1f1",
-        gridsColor: "#131313",
-        gradientTo: "#65379B",
-        gradientFrom: "#6457C6",
-      },
-    },
-  },
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx}", // Note the addition of the `app` directory.
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
 
-  plugins: [require("tailwind-clip-path")],
+    // Or if using `src` directory:
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
 }
