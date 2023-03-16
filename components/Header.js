@@ -1,14 +1,33 @@
+"use client"
+
 import Link from "next/link"
+import { useEffect, useState } from "react"
 
 export default function Header() {
+  const [scroll, setScroll] = useState(false)
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setScroll(true)
+    } else {
+      setScroll(false)
+    }
+  }
+
   return (
-    <nav class="fixed w-full top-0 left-0">
-      <div class="container flex flex-wrap items-center justify-between mx-auto">
-        <Link href={`/`} className={`flex items-center`}>
-          <img src="./logo.svg" alt="Redouan Ch. Logo" />
-        </Link>
-        <div class="flex flex-row justify-between w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-          <ul>
+    <nav class={`w-full fixed top-0 left-0 leading-none bg-mainColor backdrop-filter-none lg:bg-mainColor/40 lg:backdrop-blur-[1px]  ${scroll && `border-b border-gray-400`}`}>
+      <div className={`m-4 lg:mx-8 lg:mt-8 lg:mb-2`}>
+        <div class={`flex justify-between items-baseline`}>
+          <Link href={`/`} className={`w-12 lg:w-14`}>
+            <img src="./logo.svg" alt="Redouan Ch. Logo" />
+          </Link>
+
+          <ul class={`flex gap-4`}>
             <li>
               <Link href={`/about`}>About</Link>
             </li>

@@ -5,7 +5,7 @@ export default function Footer() {
         <img src="./logo.svg" alt="" />
       </div>
       <div className={`p-4 absolute top-0 left-0 flex flex-col gap-5`}>
-        <div className={`text-mainColor text-2xl`}>Stay in touch!</div>
+        <div className={`text-mainColor text-2xl `}>Stay in touch!</div>
         <form className={`flex flex-col items-start gap-3`}>
           <input type="email" name="email" className={`text-mainColor px-3 py-1 border-2 border-mainColor rounded-3xl`} />
           <button className={`text-mainColor border-2 border-mainColor  hover:text-textColor hover:bg-mainColor px-3 py-1 rounded-3xl`}>Submit</button>
