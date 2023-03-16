@@ -20,14 +20,14 @@ export default function Header() {
   }
 
   return (
-    <nav class={`w-full fixed top-0 left-0 leading-none bg-mainColor backdrop-filter-none lg:bg-mainColor/40 lg:backdrop-blur-[1px]  ${scroll && `border-b border-gray-400`}`}>
+    <nav className={`w-full fixed top-0 left-0 leading-none bg-mainColor backdrop-filter-none lg:bg-mainColor/40 lg:backdrop-blur-[1px]  ${scroll && `border-b border-neutral-400`}`}>
       <div className={`m-4 lg:mx-8 lg:mt-8 lg:mb-2`}>
-        <div class={`flex justify-between items-baseline`}>
+        <div className={`flex justify-between items-baseline`}>
           <Link href={`/`} className={`w-12 lg:w-14`}>
             <img src="./logo.svg" alt="Redouan Ch. Logo" />
           </Link>
 
-          <ul class={`flex gap-4`}>
+          <ul className={`flex gap-4`}>
             <li>
               <Link href={`/about`}>About</Link>
             </li>
