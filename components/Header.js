@@ -27,14 +27,14 @@ export default function Header() {
             <img src="./logo.svg" alt="Redouan Ch. Logo" />
           </Link>
 
-          <ul className={`flex gap-4`}>
+          {/* <ul className={`flex gap-4 z-40`}>
             <li>
               <Link href={`/about`}>About</Link>
             </li>
             <li>
               <Link href={`/blog`}>Blog</Link>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
     </nav>

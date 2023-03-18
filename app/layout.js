@@ -18,13 +18,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${major.variable} text-textColor font-sans bg-mainColor scrollbar`}>
+    <html lang="en" className={`${major.variable} font-sans text-textColor bg-mainColor scrollbar overflow-x-hidden`}>
       <body>
-        <div className={`max-w-screen-lg p-4 lg:px-0 lg:m-auto `}>
-          <div>{<Header />}</div>
-          <div>{children}</div>
-        </div>
-        <div>{<Footer />} </div>
+        <nav>{<Header />}</nav>
+        <div className={`max-w-screen-lg p-4 lg:px-0 m-auto`}>{children}</div>
+        <footer>{<Footer />}</footer>
       </body>
     </html>
   )
