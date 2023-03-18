@@ -11,7 +11,6 @@ module.exports = {
         textColor: "#f1f1f1",
         gridsColor: "#131313",
         gradientFrom: "#6457C6",
-        gradientTo: "#65379B",
       },
       fontFamily: {
         sans: ["var(--font-major)"],
