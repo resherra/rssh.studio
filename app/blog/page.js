@@ -1,3 +1,3 @@
-export default function Blogpage() {
-  return <h1>there's no blog post yet!</h1>
+export default function BlogPage() {
+  return <h1>there&apos;s no blog post yet!</h1>
 }

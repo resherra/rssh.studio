@@ -1,8 +1,14 @@
+import Image from "next/image"
+import githubIcon from "../public/github-logo.svg"
+import twitterIcon from "../public/twitter-logo.svg"
+import copyrightIcon from "../public/copyright-icon.svg"
+import logo from "../public/logo.svg"
+
 export default function Footer() {
   return (
     <div className={`flex flex-col relative justify-center overflow-hidden`}>
       <div className={`w-[35rem] md:w-screen`}>
-        <img src="./logo.svg" alt="" />
+        <Image src={logo} alt="" className={`w-[35rem] md:w-screen`} />
       </div>
 
       <div className={`m-4 lg:mx-8 lg:my-8 absolute top-0 md:bottom-0 md:top-auto left-0 flex flex-col gap-5`}>
@@ -16,15 +22,15 @@ export default function Footer() {
 
         <div className={`flex items-center justify-between`}>
           <div className={`flex gap-2 items-baseline`}>
-            <img className={`w-3`} src="./copyright-icon.svg" alt="" />
+            <Image className={`w-3`} src={copyrightIcon} />
             <h6 className={`text-mainColor`}>Redouan ch {new Date().getFullYear()}</h6>
           </div>
           <div className={`flex gap-2`}>
             <a href="https://twitter.com/lazycherrat" target="_blank">
-              <img src="./twitter-logo.svg" alt="" className={`w-5`} />
+              <Image src={twitterIcon} alt="" className={`w-5`} />
             </a>
             <a href="https://github.com/lazych" target="_blank">
-              <img src="./github-logo.svg" alt="" className={`w-5`} />
+              <Image src={githubIcon} alt="" className={`w-5`} />
             </a>
           </div>
         </div>

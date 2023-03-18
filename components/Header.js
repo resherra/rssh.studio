@@ -2,6 +2,9 @@
 
 import Link from "next/link"
 import { useEffect, useState } from "react"
+import Image from "next/image"
+
+import logo from "../public/logo.svg"
 
 export default function Header() {
   const [scroll, setScroll] = useState(false)
@@ -24,17 +27,17 @@ export default function Header() {
       <div className={`m-4 lg:mx-8 lg:mt-8 lg:mb-2`}>
         <div className={`flex justify-between items-baseline`}>
           <Link href={`/`} className={`w-12 lg:w-14`}>
-            <img src="./logo.svg" alt="Redouan Ch. Logo" />
+            <Image src={logo} alt="" />
           </Link>
 
-          {/* <ul className={`flex gap-4 z-40`}>
+          <ul className={`flex gap-4 z-40`}>
             <li>
               <Link href={`/about`}>About</Link>
             </li>
             <li>
               <Link href={`/blog`}>Blog</Link>
             </li>
-          </ul> */}
+          </ul>
         </div>
       </div>
     </nav>
