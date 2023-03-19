@@ -7,7 +7,6 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        mainColor: "#000000",
         textColor: "#f1f1f1",
         gridsColor: "#131313",
         gradientFrom: "#6457C6",
