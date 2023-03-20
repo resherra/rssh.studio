@@ -27,7 +27,7 @@ export default function Header() {
       <div className={`m-4 lg:mx-8 lg:mt-8 lg:mb-2`}>
         <div className={`flex justify-between items-baseline`}>
           <Link href={`/`} className={`w-12 lg:w-14`} aria-label="Home page">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 95" className={`fill-[#c7c6c1]`}>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 95" className={`fill-white`}>
               <g data-name="Layer 2">
                 <g data-name="Layer 1">
                   <path d="M0 0h95v95H0zM190 95H95l95-72.31V95z" />
