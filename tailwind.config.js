@@ -8,8 +8,6 @@ module.exports = {
     extend: {
       colors: {
         textColor: "#f1f1f1",
-        gridsColor: "#131313",
-        gradientFrom: "#6457C6",
       },
       fontFamily: {
         sans: ["var(--font-major)"],

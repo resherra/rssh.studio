@@ -36,14 +36,14 @@ export default function Header() {
             </svg>
           </Link>
 
-          <ul className={`flex gap-4`}>
+          {/* <ul className={`flex gap-4`}>
             <li>
               <Link href={`/about`}>About</Link>
             </li>
             <li>
               <Link href={`/blog`}>Blog</Link>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
     </nav>
