@@ -38,7 +38,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className={`flex gap-2 items-baseline`}>
+          <div className={`flex gap-2 items-center`}>
             <Image className={`w-3`} src={copyrightIcon} alt="Copyright icon" />
             <div className={`text-black`}>Redouan Ch. {new Date().getFullYear()}</div>
           </div>

@@ -1,3 +1,7 @@
 export default function BlogPage() {
-  return <h1>there&apos;s no blog post yet!</h1>
+  return (
+    <div className={`min-h-[32rem] flex justify-center items-center`}>
+      <h1>Sorry, there&apos;s no blog post yet! Submit your email below to stay updated.</h1>
+    </div>
+  )
 }
