@@ -13,7 +13,7 @@ export default function tools() {
           <p className="text-stone-400">when im building some APIs:</p>
           <p>Expressjs, MongoDB</p>
           <p className="text-stone-400">
-            currently i'm exploring: <span className="text-white">TypeScript, Prisma..</span>{" "}
+            currently i&apos;m exploring: <span className="text-white">TypeScript, Prisma..</span>{" "}
           </p>
         </div>
         <div className="flex flex-col gap-3">
