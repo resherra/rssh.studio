@@ -36,10 +36,10 @@ export default function Header() {
             </svg>
           </Link>
 
-          <ul className={`flex gap-4`}>
-            {/* <li>
+          <ul className={`flex gap-4 items-baseline`}>
+            <li>
               <Link href={`/about`}>About</Link>
-            </li> */}
+            </li>
             <li>
               <Link href={`/blog`}>Blog</Link>
             </li>

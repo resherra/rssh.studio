@@ -6,7 +6,7 @@ import copyrightIcon from "../public/copyright-icon.svg"
 export default function Footer() {
   return (
     <div className={`flex flex-col relative justify-center overflow-hidden selection:text-textColor selection:bg-black`}>
-      <div className={`w-[35rem] md:w-screen`}>
+      <div className={`w-[35rem] md:w-screen lg:h-screen lg:w-auto`}>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 95" className={`fill-stone-200`}>
           <g data-name="Layer 2">
             <g data-name="Layer 1">
@@ -18,7 +18,7 @@ export default function Footer() {
 
       <div className={`absolute w-full h-full flex lg:justify-start lg:items-end`}>
         <div className={`p-4 lg:px-8 lg:pb-8 flex flex-col gap-5`}>
-          <div className={`text-black text-2xl`}>Stay in touch!</div>
+          <h5 className={`text-black text-2xl`}>Stay in touch!</h5>
           <form name="simple-contact-form" acceptCharset="utf-8" action="https://formspree.io/f/moqznaqk" method="POST">
             <fieldset className={`flex flex-col items-start gap-3`}>
               <input type="email" name="_replyto" id="email-address" placeholder="example@email.com" required="" className={`text-black px-3 py-1 border-2 border-black rounded-3xl bg-transparent placeholder:text-black/40 outline-none`} />
