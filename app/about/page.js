@@ -11,7 +11,7 @@ export default function AboutPage() {
           </div>
           <div>
             <Link className="text-stone-400" href={`/tools`}>
-              ./tools i use
+              ./tools and technologies i use
             </Link>
           </div>
         </div>

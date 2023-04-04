@@ -10,8 +10,9 @@ export default function tools() {
         <div className="flex flex-col gap-3">
           <p className="text-stone-400 text-2xl">Code</p>
           <p>Html / Css / Sass / Tailwindcss / JavaScript / Reactjs / Nextjs</p>
-          <p className="text-stone-400">when im building some APIs:</p>
-          <p>Expressjs, MongoDB</p>
+          <p className="text-stone-400">
+            when im building some APIs: <span className="text-white">Expressjs, MongoDB</span>{" "}
+          </p>
           <p className="text-stone-400">
             currently i&apos;m exploring: <span className="text-white">TypeScript, Prisma..</span>{" "}
           </p>
