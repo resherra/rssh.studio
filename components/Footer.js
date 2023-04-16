@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <div className={`flex flex-col relative justify-center overflow-hidden selection:text-textColor selection:bg-black`}>
       <div className={`w-[35rem] md:w-screen lg:h-screen lg:w-auto`}>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 95" className={`fill-stone-200`}>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 95" className={`fill-white`}>
           <g data-name="Layer 2">
             <g data-name="Layer 1">
               <path d="M0 0h95v95H0zM190 95H95l95-72.31V95z" />
