@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react"
 import "./globals.css"
 import { DM_Serif_Display } from "next/font/google"
 
@@ -12,7 +13,7 @@ const major = DM_Serif_Display({
 })
 
 export const metadata = {
-  title: "Redouan Ch",
+  title: "Chred | Hello world!",
   description: "Hello, i'm Redouan Ch. Front-end developer and UI designer. I help Independents, startups founders to Ideate. Prototype. Build. User-friendly experiences and ship it Faster.",
 }
 
@@ -21,7 +22,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${major.variable} font-sans text-white bg-black scrollbar overflow-x-hidden`}>
         <nav className="selection:bg-stone-200 selection:text-black">{<Header />}</nav>
-        <div className={`max-w-screen-lg p-4 lg:px-0 m-auto selection:bg-stone-200 selection:text-black`}>{children}</div>
+        <div className={`max-w-screen-lg p-4 lg:px-0 m-auto selection:bg-stone-200 selection:text-black`}>
+          {children}
+          <Analytics />
+        </div>
         <footer>{<Footer />}</footer>
       </body>
     </html>
