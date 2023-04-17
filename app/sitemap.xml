@@ -1,23 +1,22 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-	<loc>https://chred.me/</loc>
-	<lastmod>2023-04-17T06:19:35+01:00</lastmod>
-	<priority>0.4</priority>
-</url>
-<url>
-	<loc>https://chred.me/about</loc>
-	<lastmod>2023-04-17T06:19:35+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://chred.me/blog</loc>
-	<lastmod>2023-04-17T06:19:35+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://chred.me/tools</loc>
-	<lastmod>2023-04-17T06:19:35+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
+﻿<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://chred.me/</loc>
+		<lastmod>2023-04-17T06:19:35+01:00</lastmod>
+		<priority>0.4</priority>
+	</url>
+	<url>
+		<loc>https://chred.me/about</loc>
+		<lastmod>2023-04-17T06:19:35+01:00</lastmod>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://chred.me/blog</loc>
+		<lastmod>2023-04-17T06:19:35+01:00</lastmod>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://chred.me/tools</loc>
+		<lastmod>2023-04-17T06:19:35+01:00</lastmod>
+		<priority>1.0</priority>
+	</url>
 </urlset>
