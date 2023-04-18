@@ -2,9 +2,9 @@
 
 import Link from "next/link"
 import { useEffect, useState } from "react"
-import Image from "next/image"
 
-import logo from "../public/logo.svg"
+//components
+import LightModes from "./LightModes"
 
 export default function Header() {
   const [scroll, setScroll] = useState(false)
@@ -23,20 +23,14 @@ export default function Header() {
   }
 
   return (
-    <nav className={`w-full fixed top-0 left-0 leading-none bg-black backdrop-filter-none lg:bg-black/40 lg:backdrop-blur-[1px] font-mono  ${scroll && `border-b border-neutral-400`}`}>
+    <nav className={`w-full text-sm fixed top-0 left-0 leading-none bg-black backdrop-filter-none lg:bg-black/40 lg:backdrop-blur-[1px] font-mono  ${scroll && `border-b border-neutral-400`}`}>
       <div className={`m-4 lg:mx-8 lg:mt-8 lg:mb-2`}>
         <div className={`flex justify-between items-baseline`}>
-          <Link href={`/`} className={`w-12 lg:w-14`} aria-label="Home page">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 95" className={`fill-white`}>
-              <g data-name="Layer 2">
-                <g data-name="Layer 1">
-                  <path d="M0 0h95v95H0zM190 95H95l95-72.31V95z" />
-                </g>
-              </g>
-            </svg>
-          </Link>
-
+          <LightModes />
           <ul className={`flex gap-4 items-baseline`}>
+            <li>
+              <Link href={`/`}>Home</Link>
+            </li>
             <li>
               <Link href={`/about`}>About</Link>
             </li>

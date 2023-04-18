@@ -10,9 +10,9 @@ export default function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col items-start gap-3 text-black" noValidate>
-      <input id="email" type="email" name="email" placeholder="example@email.com" className="text-black px-3 py-1 border-2 border-black rounded-3xl bg-transparent placeholder:text-black/40 outline-none" />
-      <button type="submit" disabled={state.submitting} className="text-black border-2 border-black  hover:text-textColor hover:bg-black focus:bg-black focus:text-textColor  px-3 py-1  rounded-3xl outline-none">
+    <form onSubmit={handleSubmit} className={`flex flex-col items-start gap-3 text-textColor`} noValidate>
+      <input id="email" type="email" name="email" placeholder="example@email.com" className="text-textColor px-3 py-1 border border-textColor rounded-3xl bg-transparent placeholder:text-zinc-300/80 outline-none" />
+      <button type="submit" disabled={state.submitting} className="text-sm border border-textColor hover:text-secColor focus:text-secColor hover:bg-white focus:bg-white px-3 py-1 rounded-3xl outline-none">
         Submit
       </button>
     </form>

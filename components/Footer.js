@@ -1,44 +1,55 @@
+import Link from "next/link"
+
 import ContactForm from "./ContactForm"
+import BackToTop from "./BackToTop"
 
 import Image from "next/image"
-import githubIcon from "../public/github-logo.svg"
-import twitterIcon from "../public/twitter-logo.svg"
 import copyrightIcon from "../public/copyright-icon.svg"
 
 export default function Footer() {
   return (
-    <div className={`flex flex-col relative justify-center overflow-hidden selection:text-textColor selection:bg-black`}>
-      <div className={`w-[35rem] md:w-screen lg:h-screen lg:w-auto`}>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 95" className={`fill-white`}>
-          <g data-name="Layer 2">
-            <g data-name="Layer 1">
-              <path d="M0 0h95v95H0zM190 95H95l95-72.31V95z" />
-            </g>
-          </g>
-        </svg>
+    <div className={`flex flex-col font-mono justify-center text-textColor`}>
+      <p className={`font-sans font-medium`}>Stay in touch</p>
+      <div className={`flex gap-4`}>
+        <p>You can find me on</p>
+        <ul className={`flex gap-4 text-sm text-mainGray underline`}>
+          <li>
+            <a href="https://twitter.com/lazycherrat" target="_blank" aria-label="Twitter link">
+              Twitter
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/lazych" target="_blank" aria-label="Twitter link">
+              Github
+            </a>
+          </li>
+        </ul>
       </div>
-
-      <div className={`absolute w-full h-full flex lg:justify-start lg:items-end`}>
-        <div className={`p-4 lg:px-8 lg:pb-8 flex flex-col gap-5`}>
-          <h5 className={`text-black text-2xl`}>Stay in touch!</h5>
+      <div>
+        <p>Or submit your email:</p>
+        <div>
           <ContactForm />
-          <div className={`flex justify-between items-center`}>
-            <div className={`text-black`}>You can find me on:</div>
-            <div className={`flex gap-4`}>
-              <a href="https://twitter.com/lazycherrat" target="_blank" aria-label="Github Link">
-                <Image src={twitterIcon} alt="Twitter icon" className={`w-5`} />
-              </a>
-              <a href="https://github.com/lazych" target="_blank" aria-label="Github Link">
-                <Image src={githubIcon} alt="Github icon" className={`w-5`} />
-              </a>
-            </div>
-          </div>
-
-          <div className={`flex gap-2 items-center`}>
-            <Image className={`w-3`} src={copyrightIcon} alt="Copyright icon" />
-            <div className={`text-black`}>Redouan Ch. {new Date().getFullYear()}</div>
-          </div>
         </div>
+      </div>
+      <div>
+        <ul className={`flex gap-4 items-baseline`}>
+          <li>
+            <Link href={`/`}>Home</Link>
+          </li>
+          <li>
+            <Link href={`/about`}>About</Link>
+          </li>
+          <li>
+            <Link href={`/blog`}>Blog</Link>
+          </li>
+        </ul>
+      </div>
+      <div className={`flex gap-2 items-baseline justify-between text-textColor`}>
+        <div className={`flex items-baseline gap-2`}>
+          <Image className={`w-3`} src={copyrightIcon} alt="Copyright icon" />
+          <div>Redouan Ch. {new Date().getFullYear()}</div>
+        </div>
+        <BackToTop />
       </div>
     </div>
   )
