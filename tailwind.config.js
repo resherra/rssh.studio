@@ -7,10 +7,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        textColor: "#f1f1f1",
+        mainColor: "#F7CED7",
+        secColor: "#000000",
+        textColor: "#ffffff",
       },
       fontFamily: {
-        sans: ["var(--font-major)"],
+        sans: ["var(--font-domaine)"],
+        mono: ["var(--font-mark)"],
       },
     },
   },

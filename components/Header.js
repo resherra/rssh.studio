@@ -23,7 +23,7 @@ export default function Header() {
   }
 
   return (
-    <nav className={`w-full fixed top-0 left-0 leading-none bg-black backdrop-filter-none lg:bg-black/40 lg:backdrop-blur-[1px]  ${scroll && `border-b border-neutral-400`}`}>
+    <nav className={`w-full fixed top-0 left-0 leading-none bg-black backdrop-filter-none lg:bg-black/40 lg:backdrop-blur-[1px] font-mono  ${scroll && `border-b border-neutral-400`}`}>
       <div className={`m-4 lg:mx-8 lg:mt-8 lg:mb-2`}>
         <div className={`flex justify-between items-baseline`}>
           <Link href={`/`} className={`w-12 lg:w-14`} aria-label="Home page">

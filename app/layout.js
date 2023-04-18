@@ -1,15 +1,29 @@
 import { Analytics } from "@vercel/analytics/react"
 import "./globals.css"
-import { DM_Serif_Display } from "next/font/google"
+import localFont from "next/font/local"
 
 //components
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 
-const major = DM_Serif_Display({
-  variable: "--font-major",
-  subsets: ["latin"],
-  weight: "400",
+const domaine = localFont({
+  src: [
+    {
+      path: "./../public/fonts/TestDomaineDisplay-Regular.otf",
+      weight: "400",
+    },
+    {
+      path: "./../public/fonts/TestDomaineDisplay-Medium.otf",
+      weight: "500",
+    },
+  ],
+  variable: "--font-domaine",
+})
+
+const mark = localFont({
+  src: "./../public/fonts/FontFont_FF.Mark.Pro.otf",
+
+  variable: "--font-mark",
 })
 
 export const metadata = {
@@ -20,7 +34,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${major.variable} font-sans text-white bg-black scrollbar overflow-x-hidden`}>
+      <body className={`${domaine.variable} ${mark.variable} text-white bg-black scrollbar overflow-x-hidden`}>
         <nav className="selection:bg-stone-200 selection:text-black">{<Header />}</nav>
         <div className={`max-w-screen-lg p-4 lg:px-0 m-auto selection:bg-stone-200 selection:text-black`}>
           {children}
