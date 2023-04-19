@@ -10,7 +10,7 @@ export default function LightModes() {
   }
 
   return (
-    <button onClick={switchHandler} className={`text-mainGray`}>
+    <button onClick={switchHandler} className={`text-zinc-300`}>
       {!dark ? `/Dark` : `/Light`}
     </button>
   )

@@ -34,7 +34,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${domaine.variable} ${mark.variable} text-white bg-black scrollbar overflow-x-hidden`}>
+      <body className={`${domaine.variable} ${mark.variable} text-white bg-secColor scrollbar overflow-x-hidden`}>
         <nav className="selection:bg-stone-200 selection:text-black">{<Header />}</nav>
         <div className={`max-w-screen-lg p-4 lg:px-0 m-auto selection:bg-stone-200 selection:text-black`}>
           {children}
