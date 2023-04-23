@@ -4,7 +4,7 @@ import ContactForm from "./ContactForm"
 import BackToTop from "./BackToTop"
 
 import Image from "next/image"
-import copyrightIcon from "../../icons/copyright-icon.svg"
+import copyrightIcon from "../ui/icons/copyright-icon.svg"
 
 export default function Footer() {
   return (
