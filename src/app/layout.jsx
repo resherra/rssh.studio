@@ -1,10 +1,9 @@
 import localFont from "next/font/local"
-import { Analytics } from "@vercel/analytics/react"
-import config from "../data/config"
 import "../components/ui/globals.css"
+import config from "../data/config"
+import { Analytics } from "@vercel/analytics/react"
 
-//components
-
+//modules
 import Header from "../components/modules/Header"
 import Footer from "../components/modules/Footer"
 
@@ -39,11 +38,11 @@ export const metadata = {
 const domaine = localFont({
   src: [
     {
-      path: "./../components/fonts/TestDomaineDisplay-Regular.otf",
+      path: "./../../public/fonts/TestDomaineDisplay-Medium.otf",
       weight: "400",
     },
     {
-      path: "./../components/fonts/TestDomaineDisplay-Medium.otf",
+      path: "./../../public/fonts/TestDomaineDisplay-Regular.otf",
       weight: "500",
     },
   ],
@@ -51,7 +50,7 @@ const domaine = localFont({
 })
 
 const mark = localFont({
-  src: "./../components/fonts/FFMarkPro.otf",
+  src: "./../../public/fonts/FFMarkPro.otf",
 
   variable: "--font-mark",
 })
