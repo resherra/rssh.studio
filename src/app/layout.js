@@ -4,8 +4,8 @@ import config from "../data/config"
 import { AnalyticsWrapper } from "../components/analytics/Analytics"
 
 //modules
-import Header from "../components/modules/Header"
-import Footer from "../components/modules/Footer"
+import Header from "@/components/ui/shared/header"
+import Footer from "../components/ui/shared/footer"
 import Container from "@/components/modules/Container"
 
 //next-themes
@@ -43,11 +43,11 @@ export const metadata = {
 const domaine = localFont({
   src: [
     {
-      path: "./../../public/fonts/TestDomaineDisplay-Medium.otf",
+      path: "./../../public/fonts/TestDomaineDisplay-Regular.otf",
       weight: "400",
     },
     {
-      path: "./../../public/fonts/TestDomaineDisplay-Regular.otf",
+      path: "./../../public/fonts/TestDomaineDisplay-Medium.otf",
       weight: "500",
     },
   ],
@@ -65,9 +65,11 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning>
       <body className={`${domaine.variable} ${mark.variable} font-sans scroll-smooth scrollbar`}>
         <Provider>
-          <nav>{<Header />}</nav>
-          <Container>{children}</Container>
-          <footer>{<Footer />}</footer>
+          <Container>
+            {<Header />}
+            {children}
+          </Container>
+          {<Footer />}
         </Provider>
         <AnalyticsWrapper />
       </body>
