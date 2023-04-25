@@ -1,11 +1,14 @@
 import localFont from "next/font/local"
 import "../components/ui/globals.css"
 import config from "../data/config"
-import { Analytics } from "@vercel/analytics/react"
+import { AnalyticsWrapper } from "../components/analytics/Analytics"
 
 //modules
 import Header from "../components/modules/Header"
 import Footer from "../components/modules/Footer"
+
+//next-themes
+import Provider from "../components/Provider/Providers"
 
 const { url, defaultDescription, defaultTitle, twitter } = config
 
@@ -27,6 +30,7 @@ export const metadata = {
     locale: "en-US",
     type: "website",
   },
+  keywords: ["Next.js", "React", "JavaScript", "TailwindCSS", "next-themes", "App Directory", "personal website", "portfolio"],
   twitter: {
     creator: twitter,
     title: defaultTitle,
@@ -57,12 +61,12 @@ const mark = localFont({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${domaine.variable} ${mark.variable} font-sans scroll-smooth text-white bg-secColor scrollbar`}>
         <nav className="selection:bg-stone-200 selection:text-black">{<Header />}</nav>
         <div className={`max-w-screen-lg p-4 lg:px-0 m-auto selection:bg-stone-200 selection:text-black`}>
-          {children}
-          <Analytics />
+          <Provider>{children}</Provider>
+          <AnalyticsWrapper />
         </div>
         <footer>{<Footer />}</footer>
       </body>

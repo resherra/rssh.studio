@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className={`min-h-[32rem] flex items-center py-24 font-sans`}>
+    <main className={`min-h-[32rem] flex items-center py-24 font-sans dark:bg-red-500`}>
       <div className={`flex flex-col text-3xl lg:text-5xl gap-12`}>
         <h1 className={`leading-tight`}>Hello, i&apos;m Redouan Ch. Front-end developer and UI designer.</h1>
         <h1 className={`leading-snug font-medium`}>
