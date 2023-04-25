@@ -6,6 +6,7 @@ import { AnalyticsWrapper } from "../components/analytics/Analytics"
 //modules
 import Header from "../components/modules/Header"
 import Footer from "../components/modules/Footer"
+import Container from "@/components/modules/Container"
 
 //next-themes
 import Provider from "../components/Provider/Providers"
@@ -62,13 +63,13 @@ const mark = localFont({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${domaine.variable} ${mark.variable} font-sans scroll-smooth text-white bg-secColor scrollbar`}>
-        <nav className="selection:bg-stone-200 selection:text-black">{<Header />}</nav>
-        <div className={`max-w-screen-lg p-4 lg:px-0 m-auto selection:bg-stone-200 selection:text-black`}>
-          <Provider>{children}</Provider>
-          <AnalyticsWrapper />
-        </div>
-        <footer>{<Footer />}</footer>
+      <body className={`${domaine.variable} ${mark.variable} font-sans scroll-smooth scrollbar`}>
+        <Provider>
+          <nav>{<Header />}</nav>
+          <Container>{children}</Container>
+          <footer>{<Footer />}</footer>
+        </Provider>
+        <AnalyticsWrapper />
       </body>
     </html>
   )
