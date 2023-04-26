@@ -6,7 +6,7 @@ export default function ContactForm() {
   const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM)
 
   if (state.succeeded) {
-    return <p className="font-semibold pt-4">Well received, i'll keep you updated!</p>
+    return <p className="font-semibold pt-4">Well received, i&apos;ll keep you updated!</p>
   }
 
   return (
