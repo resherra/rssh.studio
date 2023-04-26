@@ -1,6 +1,6 @@
 export default function Social() {
   return (
-    <ul className={`flex gap-4 text-sm text-mainGray underline`}>
+    <ul className={`flex gap-4 text-xs text-mainGray underline`}>
       <li>
         <a href="https://twitter.com/lazycherrat" target="_blank" aria-label="Twitter link">
           Twitter

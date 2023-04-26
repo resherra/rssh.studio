@@ -1,7 +1,10 @@
-import localFont from "next/font/local"
 import "../components/ui/globals.css"
 import config from "../data/config"
+
+//analytics
 import { AnalyticsWrapper } from "../components/analytics/Analytics"
+//fonts
+import localFont from "next/font/local"
 
 //modules
 import Header from "@/components/ui/shared/header"
@@ -63,7 +66,7 @@ const mark = localFont({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${domaine.variable} ${mark.variable} font-sans scroll-smooth scrollbar`}>
+      <body className={`${domaine.variable} ${mark.variable} font-sans scroll-smooth scrollbar bg-secColor`}>
         <Provider>
           <Container>
             {<Header />}

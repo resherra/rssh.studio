@@ -6,6 +6,9 @@ export default function Links() {
       <li>
         <Link href={`/`}>Home</Link>
       </li>
+      <li className={`invisible`}>
+        <Link href={``}>##</Link>
+      </li>
       <li>
         <Link href={`/about`}>About</Link>
       </li>
