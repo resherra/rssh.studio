@@ -4,11 +4,11 @@ export default function tools() {
       <div className="flex flex-col gap-10">
         <h5 className=" font-sans text-2xl">Tools and technologies i work with on a daily basis:</h5>
         <div className="flex flex-col gap-3">
-          <p className="font-sans text-xl">Design</p>
+          <p className="font-sans text-xl font-medium">Design</p>
           <p>Adobe Illustrator, Adobe XD</p>
         </div>
         <div className="flex flex-col gap-3">
-          <p className=" font-sans text-xl">Code</p>
+          <p className=" font-sans text-xl font-medium">Code</p>
           <p>Html, Css, Sass, Tailwindcss, JavaScript, Reactjs, Nextjs</p>
           <p>Webpack, Vite</p>
           <p>
@@ -20,7 +20,7 @@ export default function tools() {
           </p>
         </div>
         <div className="flex flex-col gap-3">
-          <p className=" font-sans text-xl">Version control and deployment</p>
+          <p className=" font-sans text-xl font-medium">Version control and deployment</p>
           <p>Git, Vercel, Netlify</p>
         </div>
       </div>
