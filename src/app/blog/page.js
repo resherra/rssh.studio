@@ -1,3 +1,7 @@
+export const metadata = {
+  title: "chred | Blog",
+}
+
 export default function BlogPage() {
   return (
     <div className={`font-sans text-3xl md:text-4xl lg:text-5xl pb-24 md:w-3/4`}>

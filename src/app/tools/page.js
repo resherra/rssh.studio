@@ -1,3 +1,7 @@
+export const metadata = {
+  title: "chred | Tools",
+}
+
 export default function tools() {
   return (
     <div className={`font-mono flex`}>
