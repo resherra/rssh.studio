@@ -22,21 +22,18 @@ export default function Footer() {
               <ContactForm />
             </div>
           </div>
-          <div className={`pb-6 text-sm text-mainGray md:hidden`}>
-            <Links />
-          </div>
-          <div className={`flex gap-2 items-baseline justify-between text-sm`}>
-            <div className={`flex items-baseline gap-2`}>
-              <Image className={`w-3`} src={copyrightIcon} alt="Copyright icon" />
-              <div>Redouan Ch. {new Date().getFullYear()}</div>
+          <div className="flex justify-between items-end md:gap-12">
+            <div className="flex flex-col md:flex-row-reverse justify-between items-baseline md:w-full">
+              <div className={`pb-6 md:pb-0 text-sm text-mainGray`}>
+                <Links />
+              </div>
+              <div className={`flex items-baseline gap-2`}>
+                <Image className={`w-3`} src={copyrightIcon} alt="Copyright icon" />
+                <div>Redouan Ch. {new Date().getFullYear()}</div>
+              </div>
             </div>
-            <div className={`flex gap-12 items-baseline`}>
-              <div className={`hidden md:block text-mainGray text-xs`}>
-                <Links className={`hidden`} />
-              </div>
-              <div>
-                <BackToTop />
-              </div>
+            <div className={`min-w-max`}>
+              <BackToTop />
             </div>
           </div>
         </div>
