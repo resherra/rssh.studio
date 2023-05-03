@@ -53,6 +53,10 @@ const domaine = localFont({
       path: "./../../public/fonts/TestDomaineDisplay-Medium.otf",
       weight: "500",
     },
+    {
+      path: "./../../public/fonts/TestDomaineDisplay-Semibold.otf",
+      weight: "600",
+    },
   ],
   variable: "--font-domaine",
 })

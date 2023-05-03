@@ -24,7 +24,7 @@ export default function Header() {
 
   return (
     <div className={`pb-28 font-mono text-sm`}>
-      <nav className={`w-full z-20 fixed top-0 right-0 ${scroll && `bg-mainColor dark:bg-secColor border-b border-secColor dark:border-mainGray transition-all duration-200`}`}>
+      <nav className={`w-full z-20 fixed top-0 right-0 ${scroll && `backdrop-blur-md md:backdrop-blur-sm bg-mainColor dark:bg-black/50 border-b border-secColor dark:border-mainGray `}`}>
         <div className={`p-4 md:p-8 md:pb-2`}>
           <div className={`flex flex-row-reverse justify-between items-center`}>
             <Links />

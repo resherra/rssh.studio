@@ -8,7 +8,7 @@ import copyrightIcon from "@/components/ui/icons/copyright-icon.svg"
 
 export default function Footer() {
   return (
-    <div className={`w-screen absolute z-30 bg-secColor text-textColor selection:bg-textColor selection:text-secColor border-t dark:border-mainGray`}>
+    <div className={`w-screen absolute bg-secColor text-textColor selection:bg-textColor selection:text-secColor border-t dark:border-mainGray`}>
       <div className={`p-4 lg:px-8 pt-12 md:pt-20 text-sm`}>
         <div className={`flex flex-col font-mono justify-center`}>
           <p className={`font-sans font-medium text-3xl pb-12`}>Stay in touch</p>
@@ -24,7 +24,7 @@ export default function Footer() {
           </div>
           <div className="flex justify-between items-end md:gap-12">
             <div className="flex flex-col md:flex-row-reverse justify-between items-baseline md:w-full">
-              <div className={`pb-6 md:pb-0 text-sm text-mainGray`}>
+              <div className={`pb-6 md:pb-0 text-xs text-mainGray`}>
                 <Links />
               </div>
               <div className={`flex items-baseline gap-2`}>
