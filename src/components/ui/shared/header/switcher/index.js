@@ -1,13 +1,26 @@
+"use client"
+
+import ButtonSkel from "@/components/modules/ButtonSkel"
+
 import { useTheme } from "next-themes"
+import { useEffect } from "react"
+import { useState } from "react"
 
 export default function Switcher() {
-  const { theme, setTheme } = useTheme()
+  const { resolvedTheme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) {
+    return <ButtonSkel />
+  }
 
   return (
-    <div>
-      <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")} className={`text-xs rounded-xl px-2 py-1 bg-white text-black ${theme !== "dark" ? "" : ""}`}>
-        {theme === "dark" ? "/Dark" : "/Light"}
-      </button>
-    </div>
+    <button onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")} className={`text-xs rounded-xl px-2 py-1 bg-white text-black`}>
+      {resolvedTheme === "dark" ? "/Dark" : "/Light"}
+    </button>
   )
 }

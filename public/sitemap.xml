@@ -4,25 +4,24 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
 <url>
   <loc>https://chred.me/</loc>
-  <lastmod>2023-04-27T23:44:12+00:00</lastmod>
+  <lastmod>2023-05-04T17:00:45+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://chred.me/about</loc>
-  <lastmod>2023-04-27T23:44:12+00:00</lastmod>
+  <lastmod>2023-05-04T17:00:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://chred.me/blog</loc>
-  <lastmod>2023-04-27T23:44:12+00:00</lastmod>
+  <lastmod>2023-05-04T17:00:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://chred.me/tools</loc>
-  <lastmod>2023-04-27T23:44:12+00:00</lastmod>
+  <lastmod>2023-05-04T17:00:45+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
