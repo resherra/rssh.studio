@@ -7,8 +7,8 @@ import Rect from "../../../public/assets/images/rect"
 
 export default function Home() {
   return (
-    <main className="relative pb-8 md:flex items-start">
-      <div className={`flex font-sans md:w-11/12 lg:w-5/6 px-2 md:px-4 dark:px-0 dark:md:px-0`}>
+    <main className="relative pb-8 md:flex items-start -mx-px">
+      <div className={`flex font-sans md:w-11/12 lg:w-5/6`}>
         <div className={`flex flex-col text-3xl md:text-4xl lg:text-5xl gap-16 z-10`}>
           <h1 className={`leading-snug`}>Hello, i&apos;m Redouan Ch. Front-end developer and UI designer.</h1>
           <h1 className={`leading-snug font-medium`}>
@@ -16,7 +16,8 @@ export default function Home() {
           </h1>
         </div>
       </div>
-      <div className={`dark:hidden md:hidden`}>
+
+      <div className={`dark:opacity-0 md:hidden transition-opacity duration-200`}>
         <div className={`w-5/6 absolute top-0 left-0`}>
           <Rect />
         </div>
@@ -25,7 +26,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="hidden dark:hidden md:block md:absolute">
+      <div className="hidden dark:opacity-0 md:block md:absolute transition-opacity duration-200">
         <Image className={`w-screen`} src={personalLogo} alt="Personal Logo" />
       </div>
     </main>
