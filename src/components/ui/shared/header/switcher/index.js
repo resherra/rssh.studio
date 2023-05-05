@@ -19,7 +19,7 @@ export default function Switcher() {
   }
 
   return (
-    <button onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")} className={`text-xs rounded-xl px-2 py-1 bg-white text-black`}>
+    <button onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")} className={`text-xs rounded-xl px-2 py-1 bg-white text-black w-14`}>
       {resolvedTheme === "dark" ? "/Dark" : "/Light"}
     </button>
   )
