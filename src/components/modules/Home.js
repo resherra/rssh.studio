@@ -17,7 +17,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={`dark:opacity-0 md:hidden`}>
+      <div className={`dark:hidden md:hidden`}>
         <div className={`w-5/6 absolute top-0 left-0`}>
           <Rect />
         </div>
@@ -26,7 +26,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="hidden dark:opacity-0 md:block md:absolute">
+      <div className="hidden dark:hidden md:block md:absolute">
         <Image className={`w-screen`} src={personalLogo} alt="Personal Logo" />
       </div>
     </main>
