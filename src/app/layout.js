@@ -72,10 +72,8 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning>
       <body className={`${domaine.variable} ${mark.variable} font-sans scroll-smooth scrollbar overflow-x-hidden bg-secColor`}>
         <Provider>
-          <Container>
-            {<Header />}
-            {children}
-          </Container>
+          {<Header />}
+          <Container>{children}</Container>
           {<Footer />}
         </Provider>
         <AnalyticsWrapper />
