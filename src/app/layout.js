@@ -69,8 +69,8 @@ const mark = localFont({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${domaine.variable} ${mark.variable} font-sans scroll-smooth scrollbar overflow-x-hidden bg-secColor`}>
+    <html lang="en">
+      <body className={`${domaine.variable} ${mark.variable} font-sans scroll-smooth scrollbar overflow-x-hidden flex-grow bg-black`}>
         <Provider>
           {<Header />}
           <Container>{children}</Container>

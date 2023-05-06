@@ -8,9 +8,9 @@ import copyrightIcon from "@/components/ui/icons/copyright-icon.svg"
 
 export default function Footer() {
   return (
-    <div className={`max-w-screen-2xl relative m-auto border-t dark:border-mainGray`}>
-      <div className={`w-full absolute bg-secColor text-textColor selection:bg-textColor selection:text-secColor `}>
-        <div className={`p-4 md:px-6 lg:px-8 pt-12 md:pt-20 text-sm`}>
+    <div className={`w-full bg-black absolute`}>
+      <div className={`max-w-screen-2xl m-auto`}>
+        <div className={`p-4 md:px-6 lg:px-8 pt-12 md:pt-20 text-sm text-textColor`}>
           <div className={`flex flex-col font-mono justify-center`}>
             <p className={`font-sans font-medium text-3xl pb-12`}>Stay in touch</p>
             <div className={`flex items-baseline gap-4 pb-6`}>
