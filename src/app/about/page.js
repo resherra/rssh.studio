@@ -10,7 +10,13 @@ export default function AboutPage() {
       <div className="flex flex-col gap-8 justify-between">
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-8">
-            <p>Greetings! my name Redouan Cherrat, a self-taught JavaScript developer and UI designer, obssesed with minimalist design and typography.</p>
+            <p>
+              Greetings! my name Redouan Cherrat, also known as{" "}
+              <a href="https://twitter.com/lazycherrat" target="_blank" aria-label="Twitter link" className="underline underline-offset-3">
+                chred
+              </a>{" "}
+              . A self-taught JavaScript developer and UI designer, obssesed with minimalist design and typography.
+            </p>
             <p>Currently working as a freelancer. i specialize in front-end development. I&apos;m always eager to learn new things. my goal is to create clean, intuitive, and user-friendly web experiences that both look great and function seamlessly.</p>
           </div>
           <div className={`font-semibold`}>
@@ -20,7 +26,8 @@ export default function AboutPage() {
         <div>
           <p>Reach me out via:</p>
           <a className={`font-semibold`} href="mailto:redouancherrat@gmail.com">
-            redouancherrat@gmail.com
+            <br />
+            contact@chred.me
           </a>
         </div>
       </div>

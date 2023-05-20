@@ -14,6 +14,7 @@ export default function tools() {
         <div className="flex flex-col gap-3">
           <p className=" font-sans text-xl font-medium">Code</p>
           <p>Html, Css, Sass, Tailwindcss, JavaScript, Reactjs, Nextjs</p>
+          <p>React-query / Formik / Yup</p>
           <p>Webpack, Vite</p>
           <p>
             when im building some APIs: <span>Expressjs, MongoDB</span>{" "}
@@ -24,7 +25,7 @@ export default function tools() {
           </p>
         </div>
         <div className="flex flex-col gap-3">
-          <p className=" font-sans text-xl font-medium">Version control and deployment</p>
+          <p className=" font-sans text-xl font-medium">VC and deployment</p>
           <p>Git, Vercel, Netlify</p>
         </div>
       </div>

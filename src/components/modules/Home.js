@@ -12,7 +12,7 @@ export default function Home() {
         <div className={`flex flex-col text-3xl md:text-4xl lg:text-5xl gap-16 z-10`}>
           <h1 className={`leading-snug`}>Hello, i&apos;m Redouan Ch. Front-end developer and UI designer.</h1>
           <h1 className={`leading-snug font-medium`}>
-            I help Independents, founders to <span>Ideate, Prototype and Build </span>User-friendly experiences and ship it Faster.
+            I help Independents and founders to <span>Ideate. Prototype. Build. </span>User-friendly experiences and ship it Faster.
           </h1>
         </div>
       </div>
