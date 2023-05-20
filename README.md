@@ -14,13 +14,6 @@ Repository for my personal website, [chred.me](https://chred.me/), built with Ne
 
 - Continuous deployment with [Vercel](https://vercel.com/) Git integration
 
-## Get Started
-
-1. Clone the repository: `git clone https://github.com/lazych/chred.me.git`
-2. Install dependencies: `npm install`
-3. Start the development server: `npm run dev`
-4. Visit `http://localhost:3000` to view the website locally.
-
 ## License
 
 This project is licensed under the MIT License.
