@@ -21,8 +21,8 @@ export const metadata = {
   },
   description: "Hello, i'm Redouan Ch. Front-end developer and UI designer. I help Independents and startups founders to Ideate. Prototype. Build. User-friendly experiences and ship it Faster.",
   openGraph: {
-    title: "chred.me",
-    description: "Design and Development",
+    title: "chred.me | Hey folks!",
+    description: "Hello, i'm Redouan Ch. Front-end developer and UI designer. I help Independents and startups founders to Ideate. Prototype. Build. User-friendly experiences and ship it Faster.",
     url: "https://chred.me",
     siteName: "chred.me",
     images: [
