@@ -33,6 +33,18 @@ export const metadata = {
     locale: "en-US",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "chred.me | Hey folks!",
+    description: "Hello, i'm Redouan Ch. Front-end developer and UI designer. I help Independents and startups founders to Ideate. Prototype. Build. User-friendly experiences and ship it Faster.",
+    creator: "@lazycherrat",
+    images: ["https://chred.me/assets/og/og.jpg"],
+  },
+  icons: {
+    icon: "/assets/favicon-32x32.png",
+    shortcut: "/assets/favicon.ico",
+    apple: "/assets/apple-touch-icon.png",
+  },
   category: "technology",
 }
 
