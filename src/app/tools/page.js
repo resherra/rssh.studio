@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "chred | Tools",
+  title: "Tools",
 }
 
 export default function tools() {

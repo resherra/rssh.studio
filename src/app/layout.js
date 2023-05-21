@@ -1,5 +1,5 @@
+import { Metadata } from "next"
 import "../components/ui/globals.css"
-import config from "../data/config"
 
 //analytics
 import { AnalyticsWrapper } from "../components/analytics/Analytics"
@@ -14,33 +14,26 @@ import Container from "@/components/modules/Container"
 //next-themes
 import Provider from "../components/Provider/Providers"
 
-const { url, defaultDescription, defaultTitle, twitter } = config
-
 export const metadata = {
-  title: defaultTitle,
-  description: defaultDescription,
+  title: {
+    default: "chred | Home",
+    template: "chred | %s",
+  },
+  description: "Hello, i'm Redouan Ch. Front-end developer and UI designer. I help Independents and startups founders to Ideate. Prototype. Build. User-friendly experiences and ship it Faster.",
   openGraph: {
-    title: defaultTitle,
-    description: defaultDescription,
-    url,
-    siteName: defaultTitle,
+    title: "chred.me",
+    description: "Design and Development",
+    url: "https://chred.me",
+    siteName: "chred.me",
     images: [
       {
-        url: `${url}/assets/thumbnail/thumbnail.png`,
-        width: 1366,
-        height: 768,
+        url: "https://chred.me/assets/og/og.jpg",
       },
     ],
     locale: "en-US",
     type: "website",
   },
-  keywords: ["Next.js", "React", "JavaScript", "TailwindCSS", "next-themes", "App Directory", "personal website", "portfolio"],
-  twitter: {
-    creator: twitter,
-    title: defaultTitle,
-    description: defaultDescription,
-    site: url,
-  },
+  category: "technology",
 }
 
 const domaine = localFont({
