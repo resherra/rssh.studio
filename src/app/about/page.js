@@ -17,7 +17,7 @@ export default function AboutPage() {
               </a>{" "}
               . A self-taught JavaScript developer and UI designer, obssesed with minimalist design and typography.
             </p>
-            <p>Currently working as a freelancer. i specialize in front-end development. I&apos;m always eager to learn new things. my goal is to create clean, intuitive, and user-friendly web experiences that both look great and function seamlessly.</p>
+            <p>Currently working as a freelancer. i specialize in front-end development. as i&apos;m always eager to learn new things, my focus is creating clean, user-friendly web experiences that both look great and function seamlessly.</p>
           </div>
           <div className={`font-semibold`}>
             <Link href={`/tools`}>./tools and technologies i use</Link>

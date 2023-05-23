@@ -26,7 +26,7 @@ export default function Header() {
     <div className={` font-mono text-sm w-full z-30 sticky top-0 m-auto bg-mainColor dark:bg-secColor ${scroll && `backdrop-blur-md md:backdrop-blur-sm bg-mainColor dark:bg-secColor/50 border-b border-secColor dark:border-mainGray`}`}>
       <nav className={`max-w-screen-2xl m-auto`}>
         <div className={`p-4 md:px-6 lg:px-8 md:pt-6 md:pb-2`}>
-          <div className={`flex flex-row-reverse justify-between items-center`}>
+          <div className={`flex flex-row-reverse justify-between items-center selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black`}>
             <Links isHeader="true" />
             <Switcher />
           </div>
