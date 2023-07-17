@@ -27,7 +27,7 @@ export default function Header() {
       <nav className={`max-w-screen-2xl m-auto`}>
         <div className={`p-4 md:px-6 lg:px-8 md:pt-6 md:pb-2`}>
           <div className={`flex flex-row-reverse justify-between items-center selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black`}>
-            <Links isHeader="true" />
+            <Links isHeader={true} />
             <Switcher />
           </div>
         </div>

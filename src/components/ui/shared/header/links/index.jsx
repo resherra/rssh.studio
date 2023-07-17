@@ -1,16 +1,19 @@
 import Link from "next/link"
 
-export default function Links(props) {
+export default function Links({ isHeader = false }) {
   return (
     <ul className={`flex gap-8 md:gap-12 lg:gap-14`}>
-      <li className={props.isHeader !== "true" && `pr-8 md:pr-12`}>
+      <li className={!isHeader && `pr-8 md:pr-12`}>
         <Link href={`/`}>Home</Link>
       </li>
       <li>
         <Link href={`/about`}>About</Link>
       </li>
+      <li>
+        <Link href={`/projects`}>Projects</Link>
+      </li>
 
-      {props.isHeader !== "true" && (
+      {!isHeader && (
         <li>
           <Link href={`/blog`}>Blog</Link>
         </li>
