@@ -2,8 +2,8 @@ import Link from "next/link"
 
 export default function Links({ isHeader = false }) {
   return (
-    <ul className={`flex gap-8 md:gap-12 lg:gap-14`}>
-      <li className={!isHeader && `pr-8 md:pr-12`}>
+    <ul className={`flex gap-6 md:gap-12 lg:gap-14`}>
+      <li>
         <Link href={`/`}>Home</Link>
       </li>
       <li>

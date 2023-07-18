@@ -1,10 +1,10 @@
-import { Metadata } from "next"
 import "../components/ui/globals.css"
 
 //analytics
 import { AnalyticsWrapper } from "../components/analytics/Analytics"
 //fonts
 import localFont from "next/font/local"
+import ProjectPage from "./projects/page"
 
 //modules
 import Header from "@/components/ui/shared/header"

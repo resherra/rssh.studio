@@ -1,22 +1,21 @@
-import Image from "next/image"
-import chred from "./../../../public/assets/images/chred.png"
+import projects from "./../../../public/assets/projects.json"
+import ProjectCard from "@/components/modules/ProjectCard"
 
 export const metadata = {
   title: "Projects",
 }
 
-export default function ProjectPage() {
+const ProjectPage = () => {
   return (
-    <>
-      <h3 className="pb-10">Projects</h3>
-      <div className="flex flex-col w-80 p-4 bg-white/10 rounded-xl gap-10 ">
-        <Image className="w-full rounded-xl" src={chred} alt="Personal Logo" />
-        <div>
-          <div className="pb-5">Chred.me</div>
-          <div className="pb-8">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
-          <div className="text-gray-500 text-sm ">Tools: Nextjs, Tailwindcss, formspree</div>
-        </div>
+    <div className="font-mono">
+      <h3 className="font-sans text-3xl pb-10">Projects</h3>
+      <div className="max-w-screen-lg m-auto  flex flex-col gap-10 lg:flex-row justify-between ">
+        {projects.map((project) => (
+          <ProjectCard project={project} />
+        ))}
       </div>
-    </>
+    </div>
   )
 }
+
+export default ProjectPage

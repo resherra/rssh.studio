@@ -16,5 +16,9 @@ export default function sitemap() {
       url: "https://chred.me/blog",
       lastModified: new Date(),
     },
+    {
+      url: "https://chred.me/projects",
+      lastModified: new Date(),
+    },
   ]
 }
