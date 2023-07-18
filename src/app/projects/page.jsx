@@ -1,9 +1,12 @@
-import projects from "./../../../public/assets/projects.json"
-import ProjectCard from "@/components/modules/ProjectCard"
+"use client"
 
-export const metadata = {
-  title: "Projects",
-}
+// import projects from "./../../../public/assets/projects.json"
+import ProjectCard from "@/components/modules/ProjectCard"
+import projects from "../../../public/assets/testing"
+
+// export const metadata = {
+//   title: "Projects",
+// }
 
 const ProjectPage = () => {
   return (
