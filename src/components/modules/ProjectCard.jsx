@@ -4,10 +4,10 @@ import { AiFillGithub } from "react-icons/ai"
 
 export default function ProjectCard({ project }) {
   return (
-    <div className="">
-      <Image className="rounded-t-xl object-cover" src={project.img} alt="Personal Logo" />
+    <div>
+      <Image className="rounded-t-xl" src={project.img} alt={project.name} placeholder="blur" />
       <div className="flex flex-col h-56 p-4 bg-white/5 hover:bg-white/10 rounded-b-xl justify-between">
-        <div className="flex items-center justify-between ">
+        <div className="flex items-center justify-between">
           <div className="font-sans text-xl">{project.name}</div>
           <div className="flex items-center gap-4">
             <a href={`${project.live}`} target="_blank">
