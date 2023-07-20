@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { HiOutlineDocumentText } from "react-icons/hi"
 
 export const metadata = {
   title: "About",
@@ -19,8 +20,16 @@ export default function AboutPage() {
             </p>
             <p>Currently working as a freelancer. i specialize in front-end development. as i&apos;m always eager to learn new things, my focus is creating clean, user-friendly web experiences that both look great and function seamlessly.</p>
           </div>
-          <div className={`font-semibold`}>
-            <Link href={`/tools`}>./tools and technologies i use</Link>
+          <div className="flex gap-10">
+            <div className={`font-semibold`}>
+              <Link href={`/tools`}>./tools and technologies i use</Link>
+            </div>
+            <a href="https://docs.google.com/document/d/1SVSt0nE7b71L-2Ah5fPpw2n1af0k-XTjLFvbMbkzAvM/edit?usp=sharing" target="_blank">
+              <div className="flex  gap-2">
+                <HiOutlineDocumentText />
+                Resume
+              </div>
+            </a>
           </div>
         </div>
         <div>

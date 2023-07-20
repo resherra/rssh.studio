@@ -18,7 +18,7 @@ export default function Footer() {
               <Social />
             </div>
             <div className={`flex flex-col gap-4 pb-20 md:pb-28`}>
-              <p>Or submit your email:</p>
+              <p>Or submit your email to stay updated:</p>
               <div>
                 <ContactForm />
               </div>

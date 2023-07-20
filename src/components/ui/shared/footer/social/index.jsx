@@ -11,6 +11,11 @@ export default function Social() {
           Github
         </a>
       </li>
+      <li>
+        <a href="https://www.linkedin.com/in/redouan-cherrat-b951b81bb/" target="_blank" aria-label="Linkedin link">
+          Linkedin
+        </a>
+      </li>
     </ul>
   )
 }

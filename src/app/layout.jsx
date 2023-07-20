@@ -4,7 +4,6 @@ import "../components/ui/globals.css"
 import { AnalyticsWrapper } from "../components/analytics/Analytics"
 //fonts
 import localFont from "next/font/local"
-import ProjectPage from "./projects/page"
 
 //modules
 import Header from "@/components/ui/shared/header"
@@ -13,6 +12,9 @@ import Container from "@/components/modules/Container"
 
 //next-themes
 import Provider from "../components/Provider/Providers"
+
+//toaster
+import { Toaster } from "react-hot-toast"
 
 export const metadata = {
   title: {
@@ -80,6 +82,7 @@ export default function RootLayout({ children }) {
           {<Header />}
           <Container>{children}</Container>
           {<Footer />}
+          <Toaster />
         </Provider>
         <AnalyticsWrapper />
       </body>

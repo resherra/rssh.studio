@@ -5,9 +5,15 @@ import { useEffect, useState } from "react"
 //components
 import Switcher from "./switcher"
 import Links from "./links"
+import { toast } from "react-hot-toast"
 
 export default function Header() {
   const [scroll, setScroll] = useState(false)
+
+  useEffect(() => {
+    // console.log("hello")
+    toast("hello world")
+  }, [])
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll)
