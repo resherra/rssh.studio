@@ -20,7 +20,7 @@ export default function AboutPage() {
             </p>
             <p>Currently working as a freelancer. i specialize in front-end development. as i&apos;m always eager to learn new things, my focus is creating clean, user-friendly web experiences that both look great and function seamlessly.</p>
           </div>
-          <div className="flex gap-10">
+          <div className="flex flex-col md:flex-row gap-10">
             <div className={`font-semibold`}>
               <Link href={`/tools`}>./tools and technologies i use</Link>
             </div>

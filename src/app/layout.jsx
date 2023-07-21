@@ -13,9 +13,6 @@ import Container from "@/components/modules/Container"
 //next-themes
 import Provider from "../components/Provider/Providers"
 
-//toaster
-import { Toaster } from "react-hot-toast"
-
 export const metadata = {
   title: {
     default: "chred | Home",
@@ -82,7 +79,6 @@ export default function RootLayout({ children }) {
           {<Header />}
           <Container>{children}</Container>
           {<Footer />}
-          <Toaster />
         </Provider>
         <AnalyticsWrapper />
       </body>
