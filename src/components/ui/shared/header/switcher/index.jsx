@@ -1,9 +1,8 @@
 "use client"
 
-import ButtonSkel from "@/components/modules/ButtonSkel"
+import ButtonSkel from "../../../../modules/ButtonSkel"
 
 import { useTheme } from "next-themes"
-import { usePathname } from "next/navigation"
 import { useEffect, useState } from "react"
 
 export default function Switcher() {

@@ -1,4 +1,4 @@
-import ProjectCard from "@/components/modules/ProjectCard"
+import ProjectCard from "../../components/modules/ProjectCard"
 import projects from "../../../public/assets/testing"
 
 export const metadata = {

@@ -4,7 +4,7 @@ import Links from "../header/links"
 import Social from "./social"
 
 import Image from "next/image"
-import copyrightIcon from "@/components/ui/icons/copyright-icon.svg"
+import copyrightIcon from "../../../ui/icons/copyright-icon.svg"
 
 export default function Footer() {
   return (

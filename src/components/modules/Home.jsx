@@ -4,6 +4,7 @@ import Image from "next/image"
 import personalLogo from "./../../../public/assets/images/logo.svg"
 import Polygon from "../../../public/assets/images/polygon"
 import Rect from "../../../public/assets/images/rect"
+import { useEffect } from "react"
 
 export default function Home() {
   return (

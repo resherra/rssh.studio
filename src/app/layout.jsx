@@ -6,9 +6,9 @@ import { AnalyticsWrapper } from "../components/analytics/Analytics"
 import localFont from "next/font/local"
 
 //modules
-import Header from "@/components/ui/shared/header"
+import Header from "../components/ui/shared/header"
 import Footer from "../components/ui/shared/footer"
-import Container from "@/components/modules/Container"
+import Container from "../components/modules/Container"
 
 //next-themes
 import Provider from "../components/Provider/Providers"
