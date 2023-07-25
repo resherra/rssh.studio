@@ -5,7 +5,7 @@ import { useEffect, useState } from "react"
 //components
 import Switcher from "./switcher"
 import Links from "./links"
-import Bar from "../bar"
+import Bar from "./bar"
 
 export default function Header() {
   const [scroll, setScroll] = useState(false)

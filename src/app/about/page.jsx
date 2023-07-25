@@ -12,11 +12,11 @@ export default function AboutPage() {
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-8">
             <p>
-              Greetings! my name Redouan Cherrat, also known as{" "}
+              Greetings! My name is Redouan Cherrat, also known as{" "}
               <a href="https://twitter.com/lazycherrat" target="_blank" aria-label="Twitter link" className="underline underline-offset-3">
                 chred
               </a>{" "}
-              . A self-taught JavaScript developer and UI designer, obssesed with minimalist design and typography.
+              . A self-taught JavaScript developer and UI designer, obssesed with minimalism.
             </p>
             <p>Currently working as a freelancer. i specialize in front-end development. as i&apos;m always eager to learn new things, my focus is creating clean, user-friendly web experiences that both look great and function seamlessly.</p>
           </div>

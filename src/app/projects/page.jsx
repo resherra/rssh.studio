@@ -1,5 +1,5 @@
 import ProjectCard from "../../components/modules/ProjectCard"
-import projects from "../../../public/assets/testing"
+import projects from "../../../public/assets/projects"
 
 export const metadata = {
   title: "Projects",
