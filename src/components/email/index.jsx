@@ -13,7 +13,7 @@ export function Email() {
             </Link>
             <Hr className="mt-5 mb-10 border border-[#cccccc]" />
             <Text className="text-sm leading-6">Hi There!</Text>
-            <Text className="text-sm leading-6">A heartfelt thank you for subscribing to my blog updates! I'm excited to have you on this journey with me.</Text>
+            <Text className="text-sm leading-6">A heartfelt thank you for subscribing to my blog updates! I&apos;m excited to have you on this journey with me.</Text>
             <Text className="text-sm leading-6 pb-5">Looking forward to sharing and connecting with you!</Text>
             <Text className="text-sm leading-6">Best,</Text>
             <Text className="text-sm leading-6 font-semibold">Redouan Ch.</Text>
