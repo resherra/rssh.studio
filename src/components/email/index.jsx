@@ -4,12 +4,12 @@ export function Email() {
   return (
     <Html>
       <Head />
-      <Preview>The sales intelligence platform that helps you uncover qualified leads.</Preview>
+      <Preview>I help Independents and founders to Ideate. Prototype. Build. User-friendly experiences and ship it Faster.</Preview>
       <Tailwind>
         <Body className="bg-white text-black font-sans">
           <Container className="my-0 mx-auto pt-5 pb-12">
             <Link href="https://chred.me">
-              <Img src={`https://chred.me/assets/images/blacklogo.svg`} className="w-16" alt="Chred" />
+              <Img src="https://chred.me/assets/images/blackLogo.png" width="64" alt="Chred" />
             </Link>
             <Hr className="mt-5 mb-10 border border-[#cccccc]" />
             <Text className="text-sm leading-6">Hi There!</Text>
