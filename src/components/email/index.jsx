@@ -1,10 +1,9 @@
-import { Body, Container, Head, Hr, Html, Img, Preview, Tailwind, Text, Link } from "@react-email/components"
+import { Body, Container, Head, Hr, Html, Img, Tailwind, Text, Link } from "@react-email/components"
 
 export function Email() {
   return (
     <Html>
       <Head />
-      <Preview>I help Independents and founders to Ideate. Prototype. Build. User-friendly experiences and ship it Faster.</Preview>
       <Tailwind>
         <Body className="bg-white text-black font-sans">
           <Container className="my-0 mx-auto pt-5 pb-12">
