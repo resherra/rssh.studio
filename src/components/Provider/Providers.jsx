@@ -7,7 +7,7 @@ export default function Provider({ children }) {
   const path = usePathname()
 
   return (
-    <ThemeProvider forcedTheme={path !== "/" && path !== "/blog" ? "dark" : undefined} attribute="class">
+    <ThemeProvider forcedTheme={path !== "/blog" ? "dark" : undefined} attribute="class">
       {children}
     </ThemeProvider>
   )
