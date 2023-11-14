@@ -4,7 +4,7 @@ export const metadata = {
 
 export default function tools() {
   return (
-    <div className={`font-mono flex`}>
+    <div className="font-mono flex ">
       <div className="flex flex-col gap-10">
         <h5 className=" font-sans text-2xl">Tools and technologies i work with on a daily basis:</h5>
         <div className="flex flex-col gap-3">

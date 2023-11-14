@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .main-container {
+    @apply min-h-[calc(100vh-400px)];
+  }
+}
+
 @layer utilities {
   .scrollbar::-webkit-scrollbar {
     width: 5px;

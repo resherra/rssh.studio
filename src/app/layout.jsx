@@ -14,6 +14,8 @@ import Container from "../components/modules/Container"
 import Provider from "../components/Provider/Providers"
 
 export const metadata = {
+  metadataBase: new URL("https://chred.me"),
+
   title: {
     default: "chred | Home",
     template: "chred | %s",
@@ -77,7 +79,9 @@ export default function RootLayout({ children }) {
       <body className={`${domaine.variable} ${mark.variable} font-sans scroll-smooth scrollbar overflow-x-hidden bg-black`}>
         <Provider>
           <Header />
-          <Container>{children}</Container>
+          <div className="main-container">
+            <Container>{children}</Container>
+          </div>
           <Footer />
         </Provider>
         <AnalyticsWrapper />

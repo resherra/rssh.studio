@@ -7,14 +7,14 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="font-mono flex">
+    <div className="font-mono flex ">
       <div className="flex flex-col gap-8 justify-between">
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-8">
             <p>
               Greetings! My name is Redouan Cherrat, also known as{" "}
-              <a href="https://twitter.com/lazycherrat" target="_blank" aria-label="Twitter link" className="underline underline-offset-3">
-                chred
+              <a href="https://twitter.com/resherra" target="_blank" aria-label="X.com link" className="underline underline-offset-3">
+                resherra
               </a>{" "}
               . A self-taught JavaScript developer and UI designer, obssesed with minimalism.
             </p>
