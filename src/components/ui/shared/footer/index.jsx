@@ -8,7 +8,7 @@ import copyrightIcon from "../../../ui/icons/copyright-icon.svg"
 
 export default function Footer() {
   return (
-    <div className={`w-full bg-black absolute border-t border-transparent dark:border-mainGray selection:bg-textColor selection:text-secColor`}>
+    <div className={`w-full bg-black absolute border-t border-mainGray selection:bg-textColorselection:text-secColor`}>
       <div className={`max-w-screen-2xl m-auto`}>
         <div className={`p-4 md:px-6 lg:px-8 pt-12 md:pt-20 text-sm text-textColor`}>
           <div className={`flex flex-col font-mono justify-center`}>

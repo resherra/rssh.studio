@@ -1,11 +1,3 @@
-"use client"
-
-import Image from "next/image"
-import personalLogo from "./../../../public/assets/images/logo.svg"
-import Polygon from "../../../public/assets/images/polygon"
-import Rect from "../../../public/assets/images/rect"
-import { useEffect } from "react"
-
 export default function Home() {
   return (
     <main className="relative pb-8 md:flex items-start -mx-px">
@@ -16,19 +8,6 @@ export default function Home() {
             I help Independents and founders to <span>Ideate. Prototype. Build. </span>User-friendly experience and ship it Faster.
           </h1>
         </div>
-      </div>
-
-      <div className={`dark:hidden md:hidden`}>
-        <div className={`w-5/6 absolute top-0 left-0`}>
-          <Rect />
-        </div>
-        <div className={`w-5/6 absolute right-0 bottom-0`}>
-          <Polygon />
-        </div>
-      </div>
-
-      <div className="hidden dark:hidden md:block md:absolute">
-        <Image className={`w-screen`} src={personalLogo} alt="Personal Logo" />
       </div>
     </main>
   )

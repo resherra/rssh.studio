@@ -10,9 +10,6 @@ import Header from "../components/ui/shared/header"
 import Footer from "../components/ui/shared/footer"
 import Container from "../components/modules/Container"
 
-//next-themes
-import Provider from "../components/Provider/Providers"
-
 export const metadata = {
   metadataBase: new URL("https://chred.me"),
 
@@ -77,13 +74,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${domaine.variable} ${mark.variable} font-sans scroll-smooth scrollbar overflow-x-hidden bg-black`}>
-        <Provider>
-          <Header />
-          <div className="main-container">
-            <Container>{children}</Container>
-          </div>
-          <Footer />
-        </Provider>
+        <Header />
+        <div className="main-container">
+          <Container>{children}</Container>
+        </div>
+        <Footer />
         <AnalyticsWrapper />
       </body>
     </html>
