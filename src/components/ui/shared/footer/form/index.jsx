@@ -22,7 +22,7 @@ export default function ContactForm() {
     }
 
     send()
-  }, [state])
+  }, [state, email])
 
   if (state.succeeded) {
     return <p className="font-semibold pt-4">Well received, Check your inbox!</p>
