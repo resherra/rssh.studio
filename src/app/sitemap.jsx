@@ -1,23 +1,23 @@
 export default function sitemap() {
   return [
     {
-      url: "https://chred.me",
+      url: "https://rssh.studio",
       lastModified: new Date(),
     },
     {
-      url: "https://chred.me/about",
+      url: "https://rssh.studio/about",
       lastModified: new Date(),
     },
     {
-      url: "https://chred.me/tools",
+      url: "https://rssh.sutdio/tools",
       lastModified: new Date(),
     },
     {
-      url: "https://chred.me/blog",
+      url: "https://rssh.sutdio/blog",
       lastModified: new Date(),
     },
     {
-      url: "https://chred.me/projects",
+      url: "https://rssh.sutdio/projects",
       lastModified: new Date(),
     },
   ]

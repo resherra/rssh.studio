@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://chred.me/sitemap.xml",
+    sitemap: "https://rssh.studio/sitemap.xml",
   }
 }

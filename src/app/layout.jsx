@@ -14,21 +14,21 @@ import Container from "../components/modules/Container"
 import Provider from "../components/Provider/Providers"
 
 export const metadata = {
-  metadataBase: new URL("https://chred.me"),
+  metadataBase: new URL("https://rssh.studio"),
 
   title: {
-    default: "chred | Home",
-    template: "chred | %s",
+    default: "rssh.studio | Home",
+    template: "rssh.studio | %s",
   },
-  description: "Hello, i'm Redouan Ch. Front-end developer and UI designer. I help Independents and startups founders to Ideate. Prototype. Build. User-friendly experiences and ship it Faster.",
+  description: "Hello, i'm Redouan. Front-end developer and UI designer. I help Independents and startups founders to Ideate. Prototype. Build. User-friendly experiences and ship it Faster.",
   openGraph: {
-    title: "chred.me | Hey folks!",
-    description: "Hello, i'm Redouan Ch. Front-end developer and UI designer. I help Independents and startups founders to Ideate. Prototype. Build. User-friendly experiences and ship it Faster.",
-    url: "https://chred.me",
-    siteName: "chred.me",
+    title: "rssh.studio | Hey folks!",
+    description: "Hello, i'm Redouan. Front-end developer and UI designer. I help Independents and startups founders to Ideate. Prototype. Build. User-friendly experiences and ship it Faster.",
+    url: "https://rssh.studio",
+    siteName: "rssh.studio",
     images: [
       {
-        url: "https://chred.me/assets/og/og.jpg",
+        url: "https://rssh.studio/assets/og/og.jpg",
       },
     ],
     locale: "en-US",
@@ -36,10 +36,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "chred.me | Hey folks!",
-    description: "Hello, i'm Redouan Ch. Front-end developer and UI designer. I help Independents and startups founders to Ideate. Prototype. Build. User-friendly experiences and ship it Faster.",
-    creator: "@lazycherrat",
-    images: ["https://chred.me/assets/og/og.jpg"],
+    title: "rssh.studio | Hey folks!",
+    description: "Hello, i'm Redouan. Front-end developer and UI designer. I help Independents and startups founders to Ideate. Prototype. Build. User-friendly experiences and ship it Faster.",
+    creator: "@resherra",
+    images: ["https://rssh.studio/assets/og/og.jpg"],
   },
   icons: {
     icon: "/assets/favicon-32x32.png",

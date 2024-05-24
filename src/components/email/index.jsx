@@ -7,8 +7,8 @@ export function Email() {
       <Tailwind>
         <Body className="bg-white text-black font-sans">
           <Container className="my-0 mx-auto pt-5 pb-12">
-            <Link href="https://chred.me">
-              <Img src="https://chred.me/assets/images/blackLogo.png" width="64" alt="Chred" />
+            <Link href="https://rssh.studio">
+              <Img src="https://rssh.studio/assets/images/blackLogo.png" width="64" alt="rssh.studio" />
             </Link>
             <Hr className="mt-5 mb-10 border border-[#cccccc]" />
             <Text className="text-sm leading-6">Hi There!</Text>
@@ -17,7 +17,7 @@ export function Email() {
             <Text className="text-sm leading-6">Best,</Text>
             <Text className="text-sm leading-6 font-semibold">Redouan Ch.</Text>
             <Hr className="my-5 border border-[#cccccc]" />
-            <Text className="text-xs text-[#8898aa] font-semibold">© Chred 2023</Text>
+            <Text className="text-xs text-[#8898aa] font-semibold">© rssh.studio 2024</Text>
           </Container>
         </Body>
       </Tailwind>

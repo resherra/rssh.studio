@@ -12,11 +12,11 @@ export default function AboutPage() {
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-8">
             <p>
-              Greetings! My name is Redouan Cherrat, also known as{" "}
-              <a href="https://twitter.com/resherra" target="_blank" aria-label="X.com link" className="underline underline-offset-3">
+              Greetings! My name is Redouan, also known as{" "}
+              <a href="https://x.com/resherra" target="_blank" aria-label="x.com link" className="underline underline-offset-3">
                 resherra
               </a>{" "}
-              . A self-taught JavaScript developer and UI designer, obssesed with minimalism.
+              . A self-taught JavaScript developer and UI designer.
             </p>
             <p>Currently working as a freelancer. i specialize in front-end development. as i&apos;m always eager to learn new things, my focus is creating clean, user-friendly web experiences that both look great and function seamlessly.</p>
           </div>
@@ -34,9 +34,9 @@ export default function AboutPage() {
         </div>
         <div>
           <p>Reach me out via:</p>
-          <a className={`font-semibold`} href="mailto:redouancherrat@gmail.com">
+          <a className={`font-semibold`} href="mailto:redouan@rssh.studio">
             <br />
-            contact@chred.me
+            redouan@rssh.studio
           </a>
         </div>
       </div>

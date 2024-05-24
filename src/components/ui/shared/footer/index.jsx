@@ -30,7 +30,7 @@ export default function Footer() {
                 </div>
                 <div className={`flex items-baseline gap-2`}>
                   <Image className={`w-3`} src={copyrightIcon} alt="Copyright icon" />
-                  <div>Redouan Ch. {new Date().getFullYear()}</div>
+                  <div>rssh.studio {new Date().getFullYear()}</div>
                 </div>
               </div>
               <div className={`min-w-max`}>
