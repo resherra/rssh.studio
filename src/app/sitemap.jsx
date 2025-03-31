@@ -1,23 +1,23 @@
 export default function sitemap() {
   return [
     {
-      url: "https://rssh.studio",
+      url: "https://resherra.vercel.app/",
       lastModified: new Date(),
     },
     {
-      url: "https://rssh.studio/about",
+      url: "https://resherra.vercel.app/about",
       lastModified: new Date(),
     },
     {
-      url: "https://rssh.sutdio/tools",
+      url: "https://resherra.vercel.app/tools",
       lastModified: new Date(),
     },
     {
-      url: "https://rssh.sutdio/blog",
+      url: "https://resherra.vercel.app/blog",
       lastModified: new Date(),
     },
     {
-      url: "https://rssh.sutdio/projects",
+      url: "https://resherra.vercel.app/projects",
       lastModified: new Date(),
     },
   ]

@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://rssh.studio/sitemap.xml",
+    sitemap: "https://resherra.vercel.app/sitemap.xml",
   }
 }

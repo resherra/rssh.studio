@@ -7,8 +7,8 @@ export function Email() {
       <Tailwind>
         <Body className="bg-white text-black font-sans">
           <Container className="my-0 mx-auto pt-5 pb-12">
-            <Link href="https://rssh.studio">
-              <Img src="https://rssh.studio/assets/images/blackLogo.png" width="64" alt="rssh.studio" />
+            <Link href="https://resherra.vercel.app/">
+              <Img src="https://resherra.vercel.app/assets/images/blackLogo.png" width="64" alt="rssh" />
             </Link>
             <Hr className="mt-5 mb-10 border border-[#cccccc]" />
             <Text className="text-sm leading-6">Hi There!</Text>

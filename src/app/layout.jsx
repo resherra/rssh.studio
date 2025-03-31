@@ -14,7 +14,7 @@ import Container from "../components/modules/Container"
 import Provider from "../components/Provider/Providers"
 
 export const metadata = {
-  metadataBase: new URL("https://rssh.studio"),
+  metadataBase: new URL("https://resherra.vercel.app/"),
 
   title: {
     default: "rssh | Home",
@@ -28,7 +28,7 @@ export const metadata = {
     siteName: "rssh",
     images: [
       {
-        url: "https://rssh.studio/assets/og/og.jpg",
+        url: "https://resherra.vercel.app/assets/og/og.jpg",
       },
     ],
     locale: "en-US",
@@ -39,7 +39,7 @@ export const metadata = {
     title: "rssh | Hey folks!",
     description: "Hello, i'm Redouan. Front-end developer and UI designer. I help Independents and startups founders to Ideate. Prototype. Build. User-friendly experiences and ship it Faster.",
     creator: "@resherra",
-    images: ["https://rssh.studio/assets/og/og.jpg"],
+    images: ["https://resherra.vercel.app/assets/og/og.jpg"],
   },
   icons: {
     icon: "/assets/favicon-32x32.png",
