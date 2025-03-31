@@ -17,15 +17,15 @@ export const metadata = {
   metadataBase: new URL("https://rssh.studio"),
 
   title: {
-    default: "rssh.studio | Home",
-    template: "rssh.studio | %s",
+    default: "rssh | Home",
+    template: "rssh | %s",
   },
   description: "Hello, i'm Redouan. Front-end developer and UI designer. I help Independents and startups founders to Ideate. Prototype. Build. User-friendly experiences and ship it Faster.",
   openGraph: {
-    title: "rssh.studio | Hey folks!",
+    title: "rssh | Hey folks!",
     description: "Hello, i'm Redouan. Front-end developer and UI designer. I help Independents and startups founders to Ideate. Prototype. Build. User-friendly experiences and ship it Faster.",
-    url: "https://rssh.studio",
-    siteName: "rssh.studio",
+    url: "https://rssh",
+    siteName: "rssh",
     images: [
       {
         url: "https://rssh.studio/assets/og/og.jpg",
@@ -36,7 +36,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "rssh.studio | Hey folks!",
+    title: "rssh | Hey folks!",
     description: "Hello, i'm Redouan. Front-end developer and UI designer. I help Independents and startups founders to Ideate. Prototype. Build. User-friendly experiences and ship it Faster.",
     creator: "@resherra",
     images: ["https://rssh.studio/assets/og/og.jpg"],

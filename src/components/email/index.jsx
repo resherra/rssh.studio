@@ -17,7 +17,7 @@ export function Email() {
             <Text className="text-sm leading-6">Best,</Text>
             <Text className="text-sm leading-6 font-semibold">Redouan.</Text>
             <Hr className="my-5 border border-[#cccccc]" />
-            <Text className="text-xs text-[#8898aa] font-semibold">© rssh.studio 2024</Text>
+            <Text className="text-xs text-[#8898aa] font-semibold">rssh 2023</Text>
           </Container>
         </Body>
       </Tailwind>

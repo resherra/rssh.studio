@@ -29,8 +29,7 @@ export default function Footer() {
                   <Links />
                 </div>
                 <div className={`flex items-baseline gap-2`}>
-                  <Image className={`w-3`} src={copyrightIcon} alt="Copyright icon" />
-                  <div>rssh.studio {new Date().getFullYear()}</div>
+                  <div>rssh 2023</div>
                 </div>
               </div>
               <div className={`min-w-max`}>

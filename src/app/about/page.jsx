@@ -34,9 +34,9 @@ export default function AboutPage() {
         </div>
         <div>
           <p>Reach me out via:</p>
-          <a className={`font-semibold`} href="mailto:redouan@rssh.studio">
+          <a className={`font-semibold`} href="mailto:redouancherrat@gmail.com">
             <br />
-            redouan@rssh.studio
+            redouancherrat@gmail.com
           </a>
         </div>
       </div>
